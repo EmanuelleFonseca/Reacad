@@ -13,6 +13,21 @@ $this->menu=array(
 );
 ?>
 
-<h1>Cadastro de Projeto</h1>
+<section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>Cadastro de Projeto</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Início</a> <span class="divider">/</span></li>
+                        <li class="active">Cadastro de Projeto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr/>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

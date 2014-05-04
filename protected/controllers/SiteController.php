@@ -107,6 +107,12 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 	
+	public function actionFaq()
+	{
+	      
+	      $this->render('faq');
+	
+	}
 	public function actionPainel()
 	{  
 	   

@@ -17,10 +17,11 @@ $this->pageTitle=Yii::app()->name;
   </div>
   <div class="span4">
   <h2>Bem vindo ao Reacad!</h2>
-  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <p> Este repositório foi criado com objetivo de preservar e difundir a produção científica do corpo discente do IFMA. 
+      Se você é aluno do Campus Monte Castelo - São Luís, faça seu cadastro e mostre seus projetos a todos, através do Reacad.</p>
  
-  <p>This paragraph contains important ... </p>
-  <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+ 
+  <p><a class="btn btn-primary btn-large" href = "http://localhost/reacad/index.php?r=site/page&view=about">Conheça melhor</a></p>
    </div> 
 </div>
 

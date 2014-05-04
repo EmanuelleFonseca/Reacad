@@ -15,13 +15,30 @@ $this->menu=array(
 	//array('label'=>'Manage Aluno', 'url'=>array('admin')),
 );
 ?>
+<section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                   <h1><?php echo $model->nomeAluno; ?></h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Início</a> <span class="divider">/</span></li>
+                        <li><a href="#">Aluno</a> <span class="divider">/</span></li>
+                        <li class="active"><?php echo $model->nomeAluno; ?></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->  
 
-<h1><?php echo $model->nomeAluno; ?></h1>
+
 <div class="container">  
       <ul class="thumbnails">   
   <li class="span3">  
     <a href="#" class="thumbnail">  
-      <img src="http://img2.wikia.nocookie.net/__cb20131115045139/katawashoujo/images/1/11/Char_rin.png "alt="mysql tutorial" width="300" height="180" />  
+      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Adium.png "alt="mysql tutorial" width="300" height="180" />  
     </a>
 	<?php $this->widget('bootstrap.widgets.TbMenu', array(
     'type'=>'list',
@@ -48,7 +65,6 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'idAluno',
 		'nomeAluno',
 		'emailAluno',
 		'codigoAluno',
@@ -56,3 +72,9 @@ $this->menu=array(
 		'cursoAluno'
 	),
 )); ?>
+
+ </li>      
+</ul>  
+<hr> 
+</div>
+

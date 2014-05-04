@@ -19,44 +19,16 @@ class UserIdentity extends CUserIdentity
 	
 	public function authenticate()
 	{  
-	   
-		$users=array(
-			// username => password
-			
-			'demo'=>'demo',
-			'admin'=>'admin',
-			
-		);
+	   $user = Aluno::model()->findByAttributes(array('emailAluno'=>$this->username));
 
-	   
-		if(!isset($users[$this->username]))
-			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		elseif($users[$this->username]!==$this->password)
-			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
-			$this->errorCode=self::ERROR_NONE;
-			
-	        return !$this->errorCode;
-		
-	   /*
-	   
-	   $conexao = Yii::app()->db;
-	   
-	   $consulta = "SELECT emailAluno, senhaAluno FROM aluno";
-	   $consulta .= "WHERE emailAluno='".$this->username."' AND";
-	   $consulta .= "senhaAluno='".$this->password."'";
-	   
-	   $result = $conexao->createCommand($consulta)->query();
-	   
-	   $result->bindColumn(1, $this->username);
-	   $result->bindColumn(2, $this->password);
-	   
-	   while($result->read()!==false)
-	   {
-	      $this->errorCode = self::ERROR_NONE;
-		  return !$this->errorCode;
-	   }
-	   */
+	    if ($user===null) { // Usuário não encontrado
+		$this->errorCode=self::ERROR_USERNAME_INVALID;
+	    } else if ($user->senhaAluno !== ($this->password) ) { // Senha invalida
+		$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		    } else { // Okay!
+		    $this->errorCode=self::ERROR_NONE;
+		    }
+	    return !$this->errorCode;
 
    }
    

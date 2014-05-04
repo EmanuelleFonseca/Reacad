@@ -6,8 +6,21 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>Sobre o Reacad</h1>
- 
+ <section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>Sobre o Reacad</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Início</a> <span class="divider">/</span></li>
+                        <li class="active">Sobre o Reacad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
  
         <div class="row-fluid">
          
@@ -17,24 +30,21 @@ $this->breadcrumbs=array(
           
      
         </div>
-		<br />
-		<h2 class="center">Desenvolvedora</h2>
+		<br /><br />
+		<h4 class="center">Desenvolvedora</h2>
 
         <hr>
 
         <div class="row-fluid">
-               <div class="thumbnail span2">
-                   <img src="http://static.tumblr.com/mtmdy1d/Dqon4gc25/snapshot_20130801_32.jpg" alt="Sample Image">
-               </div>
+              
                 <div class="box">
                    
                     <h5>Emanuelle de A. Fonseca</h5>
                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.
 					Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.
 					Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
-                    <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
-             
-            </div>
+                    <a class="btn btn-social btn-facebook" href="#">Lattes</a><a class="btn btn-social btn-twitter" href="#">GitHub</a>
+                   
 </div>
 </div>
-          
+<br/>        

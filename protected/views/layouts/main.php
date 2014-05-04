@@ -16,13 +16,17 @@
 
 <body>
 <!-- page -->
-
- <!--menu-->
-	<div class="navbar navbar-inner navbar-fixed-top">
-	  <div class="navbar-inverse">
-	    <div class ="container">
-		
-		   <a class = "brand""href"="<?php echo Yii::app()->homeUrl ; ?>">
+<!-- menu -->
+<header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+			
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class = "brand""href"="<?php echo Yii::app()->homeUrl ; ?>">
 		      <?php echo CHtml::encode(Yii::app()->name); ?>
 		   </a>
 		   <div class = "nav-collapse collapse">
@@ -30,11 +34,12 @@
 			      'items'=>array(
 				      array('label'=>'Início', 'url'=>array('/site/index')),
 				      array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
+					  array('label'=>'F.A.Q.', 'url'=>array('/site/page', 'view'=>'faq')),
 				      //array('label'=>'Contact', 'url'=>array('/site/contact')),
 					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create')),
 					  array('label'=>'Enviar Projeto', 'url'=>array('/projeto/create'), 'visible'=>!Yii::app()->user->isGuest),
 					  array('label'=>'Pesquisar', 'url'=>array('/site/pesquisa')),
-					  array('label'=>'Perfil', 'url'=>array('/site/painel'), 'visible'=>!Yii::app()->user->isGuest),
+					  array('label'=>'Perfil', 'url'=>array('aluno/index'), 'visible'=>!Yii::app()->user->isGuest),
 				      array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 					  
 				      
@@ -44,11 +49,13 @@
 			         'class' => "nav navbar-nav"
 			        ),
 		        )); ?>
-		   </div>
-		</div>
-	  </div>
-	</div>
- <!-- mainmenu -->
+		   </div>     
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+    </header>
+    <!-- /mainmenu -->	
+ 
 	<br/><br/><br/><br/>
 	<div class="container">
 	

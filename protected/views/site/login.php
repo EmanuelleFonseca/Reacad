@@ -9,8 +9,22 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Login</h1>
-
+<section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                    <h1>Login</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Início</a> <span class="divider">/</span></li>
+                        <li class="active">Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr/>
 <p>Por favor, preencha o formulário abaixo com suas credenciais de login:</p>
 
 <div class="form">

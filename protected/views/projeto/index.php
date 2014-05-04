@@ -12,7 +12,24 @@ $this->menu=array(
 );
 ?>
 
-<h1>Projetos</h1>
+<section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                   <h1>Projetos</h1>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        <li><a href="index.html">Início</a> <span class="divider">/</span></li>
+                        <li><a href="#">Pesquisa</a> <span class="divider">/</span></li>
+                        <li class="active">Projetos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->  
+<hr/>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
