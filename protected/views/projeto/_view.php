@@ -18,7 +18,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('projeto')); ?>:</b>
-	<?php echo CHtml::encode($data->projeto); ?>
+	<?php echo CHtml::link(CHtml::encode($data->projeto), Yii::app()->baseUrl . '/protected/arquivos' . $data->projeto); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idAluno')); ?>:</b>

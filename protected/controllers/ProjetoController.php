@@ -31,8 +31,8 @@ class ProjetoController extends Controller
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create', 'upload' and 'update' actions
-				'actions'=>array('create','update', 'upload'),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -79,25 +79,11 @@ class ProjetoController extends Controller
 		if(isset($_POST['Projeto']))
 		{
 			$model->attributes=$_POST['Projeto'];
-			/*
-			//teste
-			if(@!empty($_FILES['Projeto']['name']['projeto']))
-			{
-			   $model->projeto = $_POST['Projeto']['projeto'];
-			   if($model->validate(array('projeto')))
-			   {
-			     $model->projeto = CUploadedFile::getInstance($model, 'projeto');
-			   } else {
-			        $model->projeto = '';
-			   }
-			   
-			   $model->projeto->saveAs($path . '/' . time() . '_' . str_replace(' ', '_', strtolower($model->projeto)));
-			}
-			
-			$model->projeto = time(). '_' . str_replace(' ', '_', strtolower($model->projeto));
-			//teste
-			*/
+            $model->projeto=CUploadedFile::getInstance($model, 'projeto');
+
 			if($model->save())
+			    if(strlen($model->projeto)>0)
+                $model->projeto->saveAs(Yii::app()->basePath.'/arquivos/'.$model->projeto);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 
@@ -105,23 +91,7 @@ class ProjetoController extends Controller
 			'model'=>$model,
 		));
 	}
-	//Upload arquivo - inicio
 	
-	public function actionUpload()
-{
-        Yii::import("ext.EAjaxUpload.qqFileUploader");
-        $folder="uploads/"; // folder for uploaded files
-        $allowedExtensions = array("pdf");//array("jpg","jpeg","gif","exe","mov" and etc...
-        $sizeLimit = 1 * 1024 * 1024;// maximum file size in bytes
-        $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
-        $result = $uploader->handleUpload($folder);
-        $result=htmlspecialchars(json_encode($result), ENT_NOQUOTES);
- 
-        echo $result;// it's array
-}
-
-//Upload arquivo - fim	
-
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -137,7 +107,10 @@ class ProjetoController extends Controller
 		if(isset($_POST['Projeto']))
 		{
 			$model->attributes=$_POST['Projeto'];
+			$model->projeto=CUploadedFile::getInstance($model, 'projeto');
 			if($model->save())
+			    if(strlen($model->projeto)>0)
+                $model->projeto->saveAs(Yii::app()->basePath.'/arquivos/'.$model->projeto);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 

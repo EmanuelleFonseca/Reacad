@@ -38,7 +38,7 @@ class Projeto extends CActiveRecord
 			array('idAluno', 'numerical', 'integerOnly'=>true),
 			array('tituloProjeto, palavrasChave', 'length', 'max'=>100),
 			array('disciplina', 'length', 'max'=>90),
-			array('projeto', 'length', 'max'=>60),
+			array('projeto', 'file', 'types' => 'pdf', 'allowEmpty' => true),
 			// teste array('projeto', 'file', 'types' => 'pdf', 'allowEmpty' => true, 'maxSize' => 1024 * 1024 * 50, 'tooLarge' => 'The file was larger than 50MB. Please upload a smaller file.'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

@@ -71,7 +71,7 @@ class AlunoController extends Controller
 		{
 			$model->attributes=$_POST['Aluno'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idAluno));
+				$this->redirect(Yii::app()->homeUrl);
 		}
 
 		$this->render('create',array(
