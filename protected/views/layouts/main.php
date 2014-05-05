@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="en" />
-   
+    <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/imagens/favicon.ico" type="image/x-icon" />
    
 	<?php
 	echo Yii::app()->bootstrap->registerAllCss();
@@ -36,7 +36,7 @@
 				      array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
 					  array('label'=>'F.A.Q.', 'url'=>array('/site/page', 'view'=>'faq')),
 				      //array('label'=>'Contact', 'url'=>array('/site/contact')),
-					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create')),
+					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create'), 'visible'=>Yii::app()->user->isGuest),
 					  array('label'=>'Enviar Projeto', 'url'=>array('/projeto/create'), 'visible'=>!Yii::app()->user->isGuest),
 					  array('label'=>'Pesquisar', 'url'=>array('/site/pesquisa')),
 					  array('label'=>'Perfil', 'url'=>array('aluno/index'), 'visible'=>!Yii::app()->user->isGuest),

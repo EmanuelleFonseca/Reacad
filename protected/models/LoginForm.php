@@ -22,7 +22,9 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			// email and password are required
-			array('username, password', 'required'),
+			array('username, password', 'required', 'message' => 'Campo obrigatório'),
+			array('username', 'email', 'message'=>'Insira um email válido'),
+			array('password', 'match', 'pattern' => '/^[ a-z0-9]+$/i', 'message'=>'Somente letras e números'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
@@ -77,4 +79,5 @@ class LoginForm extends CFormModel
 		else
 			return false;
 	}
+	
 }

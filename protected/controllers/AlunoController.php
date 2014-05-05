@@ -70,7 +70,11 @@ class AlunoController extends Controller
 		if(isset($_POST['Aluno']))
 		{
 			$model->attributes=$_POST['Aluno'];
+			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
+			
 			if($model->save())
+			    if(strlen($model->imgPerfil)>0)
+                $model->imgPerfil->saveAs(Yii::app()->basePath.'/fotos/'.$model->imgPerfil);
 				$this->redirect(Yii::app()->homeUrl);
 		}
 
@@ -94,7 +98,11 @@ class AlunoController extends Controller
 		if(isset($_POST['Aluno']))
 		{
 			$model->attributes=$_POST['Aluno'];
+			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
+			
 			if($model->save())
+			    if(strlen($model->imgPerfil)>0)
+                $model->imgPerfil->saveAs(Yii::app()->basePath.'/fotos/'.$model->imgPerfil);
 				$this->redirect(array('view','id'=>$model->idAluno));
 		}
 

@@ -13,7 +13,7 @@ $this->pageTitle=Yii::app()->name;
   <br />
   <div class="row">
   <div class="thumbnail span6">
-    <img src="http://usi.ie/wp-content/uploads/2013/08/college_students.jpg" alt="Sample Image">
+    <img src="imagens/img_index.jpg" alt="Sample Image">
   </div>
   <div class="span4">
   <h2>Bem vindo ao Reacad!</h2>
