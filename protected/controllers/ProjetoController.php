@@ -83,7 +83,7 @@ class ProjetoController extends Controller
 
 			if($model->save())
 			    if(strlen($model->projeto)>0)
-                $model->projeto->saveAs(Yii::app()->basePath.'/arquivos/'.$model->projeto);
+                $model->projeto->saveAs('arquivos/'.$model->projeto);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 
@@ -91,7 +91,7 @@ class ProjetoController extends Controller
 			'model'=>$model,
 		));
 	}
-	
+
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
@@ -110,7 +110,7 @@ class ProjetoController extends Controller
 			$model->projeto=CUploadedFile::getInstance($model, 'projeto');
 			if($model->save())
 			    if(strlen($model->projeto)>0)
-                $model->projeto->saveAs(Yii::app()->basePath.'/arquivos/'.$model->projeto);
+                $model->projeto->saveAs('arquivos/'.$model->projeto);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 
@@ -186,8 +186,8 @@ class ProjetoController extends Controller
 			Yii::app()->end();
 		}
 	}
-	
-	
+
+
 
 
 }

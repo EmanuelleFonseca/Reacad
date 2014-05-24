@@ -10,7 +10,7 @@
 	echo Yii::app()->bootstrap->registerAllCss();
 	echo Yii::app()->bootstrap->registerCoreScripts();
 	?>
-
+    <link rel="shortcut icon" href="imagens/icone.png"/>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -26,7 +26,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class = "brand""href"="<?php echo Yii::app()->homeUrl ; ?>">
+				<a class = "brand""href"="<?php echo Yii::app()->homeUrl ; ?>">
+				<img src = "imagens/icone.png" width = 30px height = 15px>
 		      <?php echo CHtml::encode(Yii::app()->name); ?>
 		   </a>
 		   <div class = "nav-collapse collapse">
