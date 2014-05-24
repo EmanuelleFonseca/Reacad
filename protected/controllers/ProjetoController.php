@@ -186,6 +186,11 @@ class ProjetoController extends Controller
 			Yii::app()->end();
 		}
 	}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
 
 
 

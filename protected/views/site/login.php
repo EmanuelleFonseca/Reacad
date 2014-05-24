@@ -42,26 +42,24 @@ $this->breadcrumbs=array(
 	   <div class="row">
 		<?php echo $form->labelEx($model,'Usúario'); ?>
 		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
+		<?php echo $form->error($model,'username', array("class" => "text-error")); ?>
 	   </div>
-    
+ <br />   
 	<div class="row">
 		<?php echo $form->labelEx($model,'Senha'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>
-		</p>
+		<?php echo $form->error($model,'password',  array("class" => "text-error")); ?>
+		
 	</div>
-
+<br />
 	<div class="row rememberMe">
 		<?php echo $form->checkBox($model,'rememberMe'); ?>
 		<?php echo $form->label($model,'rememberMe'); ?>
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
-
+<br />
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
+		<?php echo CHtml::submitButton('Login', array( 'class'=> 'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

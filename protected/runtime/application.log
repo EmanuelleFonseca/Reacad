@@ -4519,6 +4519,7 @@ REQUEST_URI=/reacad/index.php?r=aluno
 in C:\xampp\htdocs\reacad\protected\views\aluno\index.php (50)
 in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (128)
 in C:\xampp\htdocs\reacad\index.php (13)
+<<<<<<< HEAD
 2014/05/13 21:06:09 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
@@ -4725,6 +4726,71 @@ in C:\xampp\htdocs\reacad\index.php (13)
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
 2014/05/24 20:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+=======
+2014/05/05 03:11:30 [error] [exception.CException] exception 'CException' with message 'Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(196): YiiBase::import('gii.GiiModule', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(282): YiiBase::createComponent('gii.GiiModule', 'gii', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(337): CModule->getModule('gii')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('gii')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reacad/index.php?r=gii
+---
+2014/05/05 03:11:40 [error] [exception.CException] exception 'CException' with message 'Alias "gii.GiiModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:322
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(196): YiiBase::import('gii.GiiModule', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(282): YiiBase::createComponent('gii.GiiModule', 'gii', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(337): CModule->getModule('gii')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(276): CWebApplication->createController('gii/crud/index')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/reacad/index.php?r=gii/crud/index
+---
+2014/05/05 03:16:40 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\reacad\protected\views\aluno\index.php:34)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AlunoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AlunoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(7): AlunoController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(286): AlunoController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): AlunoController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AlunoController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=aluno
+in C:\xampp\htdocs\reacad\protected\views\aluno\index.php (34)
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (7)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 03:25:45 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 03:28:08 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 03:28:44 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 03:36:13 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 03:44:59 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 04:33:44 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 04:45:45 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 04:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:164
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
 Stack trace:
 #0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('')
 #1 [internal function]: ProjetoController->actionView('')
@@ -4746,10 +4812,14 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=projeto/view&id=
 HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
 ---
+<<<<<<< HEAD
 2014/05/24 20:02:24 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
 2014/05/24 20:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+=======
+2014/05/05 04:48:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
 Stack trace:
 #0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('')
 #1 [internal function]: ProjetoController->actionView('')
@@ -4771,10 +4841,29 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=projeto/view&id=
 HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
 ---
+<<<<<<< HEAD
 2014/05/24 20:02:37 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
 2014/05/24 20:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+=======
+2014/05/05 04:49:08 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 05:14:40 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 05:16:16 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 05:17:49 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 05:19:00 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/05 05:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
 Stack trace:
 #0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('')
 #1 [internal function]: ProjetoController->actionView('')
@@ -4796,10 +4885,14 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=projeto/view&id=
 HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
 ---
+<<<<<<< HEAD
 2014/05/24 20:02:47 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
 2014/05/24 20:02:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+=======
+2014/05/05 05:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
 Stack trace:
 #0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('')
 #1 [internal function]: ProjetoController->actionView('')
@@ -4821,6 +4914,7 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=projeto/view&id=
 HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
 ---
+<<<<<<< HEAD
 2014/05/24 20:03:10 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
@@ -4872,3 +4966,5 @@ in C:\xampp\htdocs\reacad\index.php (13)
 2014/05/24 20:21:17 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
+=======
+>>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123

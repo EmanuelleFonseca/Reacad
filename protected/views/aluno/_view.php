@@ -25,6 +25,10 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cursoAluno')); ?>:</b>
 	<?php echo CHtml::encode($data->cursoAluno); ?>
+	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('imgPerfil')); ?>:</b>
+	<?php echo CHtml::encode($data->imgPerfil); ?>
 	<br /><br />
 
 

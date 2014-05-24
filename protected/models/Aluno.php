@@ -11,6 +11,8 @@
  * @property integer $telefoneAluno
  * @property string $cursoAluno
  * @property string $senhaAluno
+ * @property string $curriculo
+ * @property string $imgPerfil
  *
  * The followings are the available model relations:
  * @property Projeto[] $projetos
@@ -20,7 +22,6 @@ class Aluno extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-	 
 	public function tableName()
 	{
 		return 'aluno';
@@ -36,13 +37,14 @@ class Aluno extends CActiveRecord
 		return array(
 			array('nomeAluno, emailAluno, codigoAluno, cursoAluno, senhaAluno', 'required'),
 			array('codigoAluno, telefoneAluno', 'numerical', 'integerOnly'=>true),
-			array('nomeAluno', 'length', 'max'=>100),
+			array('nomeAluno, imgPerfil', 'length', 'max'=>100),
 			array('emailAluno', 'length', 'max'=>50),
 			array('cursoAluno', 'length', 'max'=>70),
-			array('senhaAluno', 'length', 'max'=>10),
+			array('imgPerfil', 'file', 'types' => 'jpg,gif, jpeg, png'),
+			array('senhaAluno, curriculo', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idAluno, nomeAluno, emailAluno, codigoAluno, telefoneAluno, cursoAluno, senhaAluno', 'safe', 'on'=>'search'),
+			array('idAluno, nomeAluno, emailAluno, codigoAluno, telefoneAluno, cursoAluno, senhaAluno, curriculo, imgPerfil', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,13 +66,15 @@ class Aluno extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idAluno' => 'Id:',
-			'nomeAluno' => 'Nome:',
-			'emailAluno' => 'Email:',
-			'codigoAluno' => 'Código:',
-			'telefoneAluno' => 'Telefone:',
-			'cursoAluno' => 'Curso:',
-			'senhaAluno' => 'Senha:',
+			'idAluno' => 'Id Aluno',
+			'nomeAluno' => 'Nome Aluno',
+			'emailAluno' => 'Email Aluno',
+			'codigoAluno' => 'Codigo Aluno',
+			'telefoneAluno' => 'Telefone Aluno',
+			'cursoAluno' => 'Curso Aluno',
+			'senhaAluno' => 'Senha Aluno',
+			'curriculo' => 'Curriculo',
+			'imgPerfil' => 'Foto de Perfil',
 		);
 	}
 
@@ -99,6 +103,8 @@ class Aluno extends CActiveRecord
 		$criteria->compare('telefoneAluno',$this->telefoneAluno);
 		$criteria->compare('cursoAluno',$this->cursoAluno,true);
 		$criteria->compare('senhaAluno',$this->senhaAluno,true);
+		$criteria->compare('curriculo',$this->curriculo,true);
+		$criteria->compare('imgPerfil',$this->imgPerfil,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -38,7 +38,7 @@ $this->menu=array(
       <ul class="thumbnails">   
   <li class="span3">  
     <a href="#" class="thumbnail">  
-      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Adium.png "alt="mysql tutorial" width="300" height="180" />  
+      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Adium.png "alt="perfil" width="300" height="180" />  
     </a>
 	<?php $this->widget('bootstrap.widgets.TbMenu', array(
     'type'=>'list',
@@ -69,7 +69,8 @@ $this->menu=array(
 		'emailAluno',
 		'codigoAluno',
 		'telefoneAluno',
-		'cursoAluno'
+		'cursoAluno',
+		'imgPerfil'
 	),
 )); ?>
 
