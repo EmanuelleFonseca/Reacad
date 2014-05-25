@@ -28,15 +28,15 @@ class AlunoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create'),
+				'actions'=>array('admin','index','view','create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create', 'admin'  and 'update' actions
-				'actions'=>array('admin','update'),
+				'actions'=>array('update','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform  'delete' actions
-				'actions'=>array('delete'),
+				'actions'=>array(),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -50,7 +50,7 @@ class AlunoController extends Controller
 	 * @param integer $id the ID of the model to be displayed
 	 */
 	public function actionView($id)
-	{
+	{   
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -74,8 +74,8 @@ class AlunoController extends Controller
 			
 			if($model->save())
 			    if(strlen($model->imgPerfil)>0)
-                $model->imgPerfil->saveAs(Yii::app()->basePath.'/fotos/'.$model->imgPerfil);
-				$this->redirect(Yii::app()->homeUrl);
+                $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
+				$this->redirect(array('/site/page', 'view'=>'geral'));
 		}
 
 		$this->render('create',array(
@@ -102,7 +102,7 @@ class AlunoController extends Controller
 			
 			if($model->save())
 			    if(strlen($model->imgPerfil)>0)
-                $model->imgPerfil->saveAs(Yii::app()->basePath.'/fotos/'.$model->imgPerfil);
+                $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
 				$this->redirect(array('view','id'=>$model->idAluno));
 		}
 

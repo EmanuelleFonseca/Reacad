@@ -67,13 +67,13 @@ class Aluno extends CActiveRecord
 	{
 		return array(
 			'idAluno' => 'Id Aluno',
-			'nomeAluno' => 'Nome Aluno',
-			'emailAluno' => 'Email Aluno',
-			'codigoAluno' => 'Codigo Aluno',
-			'telefoneAluno' => 'Telefone Aluno',
-			'cursoAluno' => 'Curso Aluno',
-			'senhaAluno' => 'Senha Aluno',
-			'curriculo' => 'Curriculo',
+			'nomeAluno' => 'Nome',
+			'emailAluno' => 'Email:',
+			'codigoAluno' => 'Código:',
+			'telefoneAluno' => 'Telefone:',
+			'cursoAluno' => 'Curso:',
+			'senhaAluno' => 'Senha:',
+			'curriculo' => 'Link de Curriculo:',
 			'imgPerfil' => 'Foto de Perfil',
 		);
 	}

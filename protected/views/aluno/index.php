@@ -17,6 +17,14 @@ $this->menu=array(
             <div class="row-fluid">
                 <div class="span6">
                     <h1>Alunos</h1>
+                    <br/>
+                   <?php $this->widget('bootstrap.widgets.TbMenu', array(
+                      'type'=>'list',
+                      'items'=>array(
+		              array('label'=>'Buscar por alunos', 'icon'=>'search', 'url'=>array('/aluno/admin')),
+		
+                      ),
+                   )); ?>
                 </div>
                 <div class="span6">
                     <ul class="breadcrumb pull-right">

@@ -15,11 +15,12 @@ $this->menu=array(
 	array('label'=>'Manage Projeto', 'url'=>array('admin')),
 );
 ?>
+
 <section class="title">
         <div class="container">
             <div class="row-fluid">
                 <div class="span6">
-                    <h1> Projeto #<?php echo $model->tituloProjeto; ?></h1>
+                    <h1>Projeto</h1>
                 </div>
                 <div class="span6">
                     <ul class="breadcrumb pull-right">
@@ -33,15 +34,26 @@ $this->menu=array(
     </section>
 <hr/>
 
-
-
-<?php $this->widget('zii.widgets.CDetailView', array(
+<div class="container">  
+      <ul class="thumbnails">   
+  <li class="span3">  
+    <a href="#" class="thumbnail">  
+      <img src="imagens/file.png" width="150px" height="150px"/>  
+    </a>
+  </li> 
+  <li class="span8">
+  	<h3>Título: <?php echo CHtml::link(CHtml::encode($model->tituloProjeto),'arquivos/' . $model->projeto); ?></h3>
+  	<?php $this->widget('bootstrap..widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'tituloProjeto',
 		'disciplina',
 		'palavrasChave',
-		'projeto',
 		'idAluno',
 	),
 )); ?>
+
+  </li>    
+</ul>  
+</div>
+	
+

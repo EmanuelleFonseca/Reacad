@@ -30,12 +30,12 @@
 		<?php echo $form->label($model,'palavrasChave'); ?>
 		<?php echo $form->textField($model,'palavrasChave',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
-
+  
 	<div class="row">
 		<?php echo $form->label($model,'projeto'); ?>
 		<?php echo $form->textField($model,'projeto',array('size'=>1,'maxlength'=>1)); ?>
 	</div>
-
+   
 	<div class="row">
 		<?php echo $form->label($model,'idAluno'); ?>
 		<?php echo $form->textField($model,'idAluno'); ?>

@@ -1,10 +1,9 @@
 <?php
 /* @var $this ProjetoController */
 /* @var $model Projeto */
-
 $this->breadcrumbs=array(
 	'Projetos'=>array('index'),
-	'Manage',
+	'- Buscar Projetos',
 );
 
 $this->menu=array(
@@ -26,18 +25,17 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Projetos</h1>
+<h1>Buscar Projetos</h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+	Informe uma ou mais das características pedidas abaixo e aperte a tecla "enter" para encontrar o(s) projeto(s) que deseja.
 </p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<!--
+<?php echo CHtml::link('Pesquisa Avançada','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
-)); ?>
+)); ?> 
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
@@ -45,14 +43,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'idprojeto',
 		'tituloProjeto',
 		'disciplina',
 		'palavrasChave',
-		'projeto',
-		'idAluno',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			
 		),
 	),
 )); ?>

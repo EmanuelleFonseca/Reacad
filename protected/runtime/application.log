@@ -4968,3 +4968,1054 @@ in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
 in C:\xampp\htdocs\reacad\index.php (13)
 =======
 >>>>>>> 6fe1fdde2650cf5750bcb96345d40fa3cbbed123
+2014/05/24 21:39:40 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/24 21:41:14 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/24 22:01:44 [error] [php] Use of undefined constant idAluno - assumed 'idAluno' (C:\xampp\htdocs\reacad\protected\views\layouts\main.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): AlunoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): AlunoController->endWidget()
+#5 C:\xampp\htdocs\reacad\protected\views\layouts\column1.php(36): AlunoController->endContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AlunoController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(784): AlunoController->renderFile()
+#9 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(56): AlunoController->render()
+#10 unknown(0): AlunoController->actionView()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AlunoController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AlunoController->filterAccessControl()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): AlunoController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AlunoController->run()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=4
+in C:\xampp\htdocs\reacad\protected\views\layouts\main.php (43)
+in C:\xampp\htdocs\reacad\protected\views\layouts\column1.php (36)
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (56)
+2014/05/24 22:02:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "C:\xampp\htdocs\reacad\protected/view/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/view/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=4
+---
+2014/05/24 22:03:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "C:\xampp\htdocs\reacad\protected/view/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/view/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=4
+---
+2014/05/24 22:03:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "C:\xampp\htdocs\reacad\protected/views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/view/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "C:\xampp\htdocs\reacad\protected/views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('C:\xampp\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/view/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/views/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:04:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/views/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:04:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=C:\xampp\htdocs\reacad\protected/views/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:04:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=views/aluno&view=idAluno
+---
+2014/05/24 22:06:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=views/aluno&view=idAluno
+---
+2014/05/24 22:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=views/aluno&view=idAluno
+---
+2014/05/24 22:07:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=4
+---
+2014/05/24 22:07:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "views/aluno".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('views/aluno')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=views/aluno&view=manu%40gmail.com
+---
+2014/05/24 22:09:16 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno&view=manu%40gmail.com
+---
+2014/05/24 22:09:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&view=manu%40gmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&view=manu%40gmail.com
+---
+2014/05/24 22:09:35 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\yii\framework\zii\widgets\CMenu.php:311)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CMenu->init()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): SiteController->createWidget()
+#2 C:\xampp\htdocs\reacad\protected\views\layouts\main.php(52): SiteController->widget()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#10 C:\xampp\htdocs\reacad\protected\views\layouts\column1.php(36): SiteController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#14 C:\xampp\htdocs\reacad\protected\controllers\SiteController.php(134): SiteController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionPesquisa()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=site/pesquisa
+in C:\xampp\htdocs\reacad\protected\views\layouts\main.php (52)
+in C:\xampp\htdocs\reacad\protected\views\layouts\column1.php (36)
+in C:\xampp\htdocs\reacad\protected\controllers\SiteController.php (134)
+2014/05/24 22:09:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/pesquisa
+---
+2014/05/24 22:12:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=4
+---
+2014/05/24 22:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/index&view=idAluno
+---
+2014/05/24 22:13:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=4
+---
+2014/05/24 22:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/index
+---
+2014/05/24 22:31:41 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/24 22:31:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php
+---
+2014/05/24 22:38:24 [error] [exception.CException] exception 'CException' with message 'Property "CFileValidator.0" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CValidator.php(189): CComponent->__set('0', 'required')
+#1 C:\xampp\htdocs\yii\framework\base\CModel.php(287): CValidator::createValidator('file', Object(Aluno), 'imgPerfil', Array)
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(304): CModel->getValidators('nomeAluno')
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('nomeAluno')
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Aluno), 'nomeAluno', Array)
+#6 C:\xampp\htdocs\reacad\protected\views\aluno\_form.php(24): CActiveForm->labelEx(Object(Aluno), 'nomeAluno')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#10 C:\xampp\htdocs\reacad\protected\views\aluno\create.php(35): CController->renderPartial('_form', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(83): CController->render('create', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=10
+---
+2014/05/24 22:47:59 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:41:49 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:48:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/admin
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/login
+---
+2014/05/25 00:48:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/admin
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/login
+---
+2014/05/25 00:50:20 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:50:33 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:51:36 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:51:46 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:51:54 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:51:56 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:52:03 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:52:13 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 00:59:54 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:00:33 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:00:48 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:00:51 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:01:02 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:04:33 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:04:40 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:13:19 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:13:25 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:13:29 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (155)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:23:16 [error] [exception.CException] exception 'CException' with message 'Property "CButtonColumn.view" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('view', Array)
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\projeto\admin.php(59): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#10 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(159): CController->render('admin', Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionAdmin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/admin')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/admin
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/pesquisa
+---
+2014/05/25 01:25:58 [error] [exception.CException] exception 'CException' with message 'Property "Projeto.nomeAluno" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('nomeAluno')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('nomeAluno')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Projeto), 'nomeAluno')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Projeto), 'nomeAluno', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(Projeto), 'nomeAluno', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\projeto\_search.php(41): CActiveForm->textField(Object(Projeto), 'nomeAluno')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\reacad\protected\views\projeto\admin.php(38): CController->renderPartial('_search', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#14 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(159): CController->render('admin', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionAdmin()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/admin')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/admin
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/pesquisa
+---
+2014/05/25 01:39:51 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:41:11 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:53:59 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 01:59:43 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:01:32 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:01:52 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:02:21 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "faq" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('faq')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/reacad/index.php?r=site/page&view=faq
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/login
+---
+2014/05/25 02:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "faq" was not found.' in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('faq')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/reacad/index.php?r=site/page&view=faq
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/login
+---
+2014/05/25 02:03:46 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:04:32 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:06:11 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:06:11 [error] [exception.CException] exception 'CException' with message 'Property "Aluno.homeUrl" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('homeUrl')
+#1 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(78): CActiveRecord->__get('homeUrl')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/05/25 02:07:45 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:07:49 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:07:51 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:08:07 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:08:27 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:09:15 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:10:36 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:11:30 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:12:02 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:13:56 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('')
+#1 [internal function]: AlunoController->actionView('')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/05/25 02:15:41 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:15:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('')
+#1 [internal function]: AlunoController->actionView('')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/05/25 02:17:01 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 02:19:32 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Aluno".
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 03:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "geral".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('geral')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('geral')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/geral')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=site/geral
+---
+2014/05/25 03:23:19 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.options" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\views\site\pages\geral.php(60): CComponent->__get('options')
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', NULL, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', NULL, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('pages/geral', NULL, true)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(140): CController->render('pages/geral')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/reacad/index.php?r=site/page&view=geral
+---
+2014/05/25 04:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/page&view=faq
+---
+2014/05/25 04:05:28 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:173
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('')
+#1 [internal function]: ProjetoController->actionView('')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjetoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjetoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/view&id=
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
+---
+2014/05/25 04:06:12 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:165
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('idAluno')
+#1 [internal function]: AlunoController->actionView('idAluno')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=idAluno
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=23
+---
+2014/05/25 04:10:35 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:10:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`reacad`.`projeto`, CONSTRAINT `fk_projeto_aluno` FOREIGN KEY (`idAluno`) REFERENCES `aluno` (`idAluno`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `projeto` (`tituloProjeto`, `disciplina`, `palavrasChave`, `idAluno`, `projeto`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (84)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:10:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`reacad`.`projeto`, CONSTRAINT `fk_projeto_aluno` FOREIGN KEY (`idAluno`) REFERENCES `aluno` (`idAluno`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `projeto` (`tituloProjeto`, `disciplina`, `palavrasChave`, `idAluno`, `projeto`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(84): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/create
+---
+2014/05/25 04:11:14 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:14:28 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:19:58 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:20:45 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:27:04 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:28:42 [warning] [application] Failed to set unsafe attribute "projeto" of "Projeto".
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 04:52:32 [error] [php] Undefined variable: model (C:\xampp\htdocs\reacad\protected\views\projeto\_view.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\reacad\protected\views\projeto\index.php(37): ProjetoController->widget()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ProjetoController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#11 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(144): ProjetoController->render()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionIndex()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/index
+in C:\xampp\htdocs\reacad\protected\views\projeto\_view.php (23)
+in C:\xampp\htdocs\reacad\protected\views\projeto\index.php (37)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (144)
+2014/05/25 04:53:11 [error] [php] Undefined variable: model (C:\xampp\htdocs\reacad\protected\views\projeto\_view.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\reacad\protected\views\projeto\index.php(37): ProjetoController->widget()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): ProjetoController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#11 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(144): ProjetoController->render()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionIndex()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/index
+in C:\xampp\htdocs\reacad\protected\views\projeto\_view.php (23)
+in C:\xampp\htdocs\reacad\protected\views\projeto\index.php (37)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (144)
+2014/05/25 05:31:27 [error] [php] Undefined variable: model (C:\xampp\htdocs\reacad\protected\views\projeto\index.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(144): ProjetoController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/index
+in C:\xampp\htdocs\reacad\protected\views\projeto\index.php (50)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (144)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 05:32:27 [error] [php] Undefined variable: model (C:\xampp\htdocs\reacad\protected\views\projeto\index.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(144): ProjetoController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/index
+in C:\xampp\htdocs\reacad\protected\views\projeto\index.php (50)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (144)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 05:32:42 [error] [exception.CException] exception 'CException' with message 'ProjetoController and its behaviors do not have a method or closure named "search".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\views\projeto\index.php(50): CComponent->__call('search', Array)
+#1 C:\xampp\htdocs\reacad\protected\views\projeto\index.php(50): ProjetoController->search()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(144): CController->render('index', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProjetoController->actionIndex()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/index')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/index
+---
+2014/05/25 05:46:23 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\reacad\protected\views\projeto\view.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(56): ProjetoController->render()
+#3 unknown(0): ProjetoController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/view&id=21
+in C:\xampp\htdocs\reacad\protected\views\projeto\view.php (66)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (56)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 05:47:43 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\reacad\protected\views\projeto\view.php:66)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): ProjetoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): ProjetoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(56): ProjetoController->render()
+#3 unknown(0): ProjetoController->actionView()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): ProjetoController->runAction()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): ProjetoController->filterAccessControl()
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): ProjetoController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): ProjetoController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=projeto/view&id=21
+in C:\xampp\htdocs\reacad\protected\views\projeto\view.php (66)
+in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (56)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/25 06:26:41 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\reacad\protected\views\aluno\admin.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(869): AlunoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(782): AlunoController->renderPartial()
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(151): AlunoController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionAdmin()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AlunoController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AlunoController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): AlunoController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AlunoController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=aluno/admin
+in C:\xampp\htdocs\reacad\protected\views\aluno\admin.php (46)
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (151)
+in C:\xampp\htdocs\reacad\index.php (13)

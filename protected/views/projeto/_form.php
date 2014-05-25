@@ -43,7 +43,39 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'disciplina'); ?>
-		<?php echo $form->textField($model,'disciplina',array('size'=>60,'maxlength'=>90)); ?>
+		<?php echo $form->dropDownList($model,'disciplina',array(
+		  'Alimentos' =>'Alimentos',
+          'Análise Química'=>'Análise Química',
+          'Artes'=>'Artes',
+          'Biologia'=>'Biologia',
+          'Design de Produto'=>'Design de Produto',
+          'Design Gráfico'=>'Design Gráfico',
+          'Edificações'=>'Edificações',
+          'Eletromecânica'=>'Eletromecânica',
+          'Eletrônica'=>'Eletrônica',
+          'Eletrotécnica'=>'Eletrotécnica',
+          'Eletrotécnica'=>'Eletrotécnica',
+          'Espanhol'=>'Espanhol',
+          'Ferrovia'=>'Ferrovia',
+          'Física'=>'Física',
+          'Geografia'=>'Geografia',
+          'Gramática'=>'Gramática',
+          'História do Brasil'=>'História do Brasil',
+          'História Geral'=>'História Geral',
+          'Informática'=>'Informática',
+          'Inglês'=>'Inglês',
+          'Literatura'=>'Literatura',
+          'Matemática'=>'Matemática',
+          'Mecânica'=>'Mecânica',
+          'Metalurgia e Materiais'=>'Metalurgia e Materiais',
+          'Portos'=>'Portos',
+          'Programação de Computadores'=>'Programação de Computadores',
+          'Química'=>'Química',
+          'Redação'=>'Redação',
+          'Saneamento Ambiental'=>'Saneamento Ambiental',
+          'Segurança do Trabalho'=>'Segurança do Trabalho',
+          'Telecomunicações'=>'Telecomunicações'
+		  )); ?>
 		<?php echo $form->error($model,'disciplina'); ?>
 	</div>
 
@@ -68,7 +100,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Enviar' : 'Save', array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -36,9 +36,9 @@ $this->menu=array(
 
 <div class="container">  
       <ul class="thumbnails">   
-  <li class="span3">  
+  <li class="span2">  
     <a href="#" class="thumbnail">  
-      <img src="http://upload.wikimedia.org/wikipedia/commons/9/91/Adium.png "alt="perfil" width="300" height="180" />  
+      <img src="<?php echo 'fotos/'.$model->imgPerfil ?> " alt="perfil" width="300" height="180" />  
     </a>
 	<?php $this->widget('bootstrap.widgets.TbMenu', array(
     'type'=>'list',
@@ -48,7 +48,6 @@ $this->menu=array(
 		array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
 		array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
         array('label'=>'Configurações','icon'=>'cog', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-        array('label'=>'F.A.Q.','icon'=>'flag', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
     ),
 )); ?>
 
@@ -62,15 +61,14 @@ $this->menu=array(
   </ul>
   <br/>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+<?php $this->widget('bootstrap..widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'nomeAluno',
-		'emailAluno',
-		'codigoAluno',
-		'telefoneAluno',
-		'cursoAluno',
-		'imgPerfil'
+	   array('name'=>'emailAluno',),
+	   array('name'=>'codigoAluno',),
+	   array('name'=>'telefoneAluno',),
+	   array('name'=>'cursoAluno',),
+	   array('name'=>'curriculo',),
 	),
 )); ?>
 
