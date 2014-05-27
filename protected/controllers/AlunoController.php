@@ -28,7 +28,7 @@ class AlunoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('admin','index','view','create'),
+				'actions'=>array('admin','index','view','create', 'projetos'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create', 'admin'  and 'update' actions
@@ -55,6 +55,13 @@ class AlunoController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+	
+	public function actionProjetos($id)
+	{   
+		$this->render('projetos',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
 
 	/**
 	 * Creates a new model.
@@ -72,10 +79,11 @@ class AlunoController extends Controller
 			$model->attributes=$_POST['Aluno'];
 			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
 			
-			if($model->save())
+			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
 				$this->redirect(array('/site/page', 'view'=>'geral'));
+			}
 		}
 
 		$this->render('create',array(
@@ -100,10 +108,11 @@ class AlunoController extends Controller
 			$model->attributes=$_POST['Aluno'];
 			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
 			
-			if($model->save())
+			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
 				$this->redirect(array('view','id'=>$model->idAluno));
+			}
 		}
 
 		$this->render('update',array(

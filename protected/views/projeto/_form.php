@@ -98,6 +98,12 @@
 		<?php echo $form->textField($model,'idAluno'); ?>
 		<?php echo $form->error($model,'idAluno'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'resumo'); ?>
+		<?php echo $form->textArea($model,'resumo',array('size'=>500,'maxlength'=>500)); ?>
+		<?php echo $form->error($model,'resumo'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Enviar' : 'Save', array('class'=>'btn btn-primary')); ?>

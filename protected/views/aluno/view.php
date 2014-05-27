@@ -19,7 +19,6 @@ $this->menu=array(
         <div class="container">
             <div class="row-fluid">
                 <div class="span6">
-                   <h1><?php echo $model->nomeAluno; ?></h1>
                 </div>
                 <div class="span6">
                     <ul class="breadcrumb pull-right">
@@ -38,27 +37,28 @@ $this->menu=array(
       <ul class="thumbnails">   
   <li class="span2">  
     <a href="#" class="thumbnail">  
-      <img src="<?php echo 'fotos/'.$model->imgPerfil ?> " alt="perfil" width="300" height="180" />  
+      <img src="<?php echo 'fotos/'.$model->imgPerfil ?> " alt="perfil" width="300" height="180" <?php echo CHtml::link(CHtml::encode($model->nomeAluno), array('view', 'id'=>$model->idAluno)); ?> 
     </a>
 	<?php $this->widget('bootstrap.widgets.TbMenu', array(
     'type'=>'list',
     'items'=>array(
-		array('label'=>'Perfil', 'icon'=>'user', 'url'=>'#'),
-        array('label'=>'Projetos', 'icon'=>'book', 'url'=>'#'),
-		array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-		array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-        array('label'=>'Configurações','icon'=>'cog', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-    ),
+       ),
 )); ?>
 
-<li class="span9"> 
-    <ul class="nav nav-pills">
-  <li class="active">
-    <a href="http://localhost/reacad/index.php?r=projeto/create">Enviar Projeto</a>
-  </li>
-  <li><a href="#">Mensagens</a></li>
-  <li><a href="#">Avaliações</a></li>
-  </ul>
+<li class="span9">
+	<div class="row-fluid">
+        <div class="span7">
+            <?php $this->widget('bootstrap.widgets.TbMenu', array(
+               'type'=>'pills',
+               'items'=>array(
+		          array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
+		          array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
+                  array('label'=>'Configurações','icon'=>'cog', 'url'=>array('update', 'id'=>$model->idAluno), 'visible'=>!Yii::app()->user->isGuest),
+                  array('label'=>'Projetos', 'icon'=>'book', 'url'=>array('/aluno/projetos', 'id'=>$model->idAluno), 'visible'=>!Yii::app()->user->isGuest),
+                  
+			   ))); ?>    
+        </div>
+    </div>
   <br/>
 
 <?php $this->widget('bootstrap..widgets.TbDetailView', array(
