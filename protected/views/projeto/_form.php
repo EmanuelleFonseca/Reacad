@@ -93,11 +93,7 @@
 
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idAluno'); ?>
-		<?php echo $form->textField($model,'idAluno'); ?>
-		<?php echo $form->error($model,'idAluno'); ?>
-	</div>
+
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'resumo'); ?>

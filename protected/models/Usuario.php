@@ -1,29 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "projeto".
+ * This is the model class for table "usuario".
  *
- * The followings are the available columns in table 'projeto':
- * @property integer $idprojeto
- * @property string $tituloProjeto
- * @property string $disciplina
- * @property string $palavrasChave
- * @property string $projeto
- * @property string $resumo
- * @property string $emailAluno
+ * The followings are the available columns in table 'usuario':
+ * @property string $email
+ * @property string $senha
+ * @property string $tipo
  *
  * The followings are the available model relations:
- * @property Avaliacao[] $avaliacaos
- * @property Aluno $emailAluno0
+ * @property Aluno[] $alunos
+ * @property Professor[] $professors
  */
-class Projeto extends CActiveRecord
+class Usuario extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'projeto';
+		return 'usuario';
 	}
 
 	/**
@@ -34,15 +30,12 @@ class Projeto extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tituloProjeto, disciplina, palavrasChave, projeto, resumo, emailAluno', 'required'),
-			array('tituloProjeto, palavrasChave', 'length', 'max'=>100),
-			array('disciplina', 'length', 'max'=>90),
-			array('projeto', 'length', 'max'=>60),
-			array('resumo', 'length', 'max'=>45),
-			array('emailAluno', 'length', 'max'=>50),
+			array('email, senha, tipo', 'required'),
+			array('email', 'length', 'max'=>90),
+			array('senha, tipo', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idprojeto, tituloProjeto, disciplina, palavrasChave, projeto, resumo, emailAluno', 'safe', 'on'=>'search'),
+			array('email, senha, tipo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,8 +47,8 @@ class Projeto extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'avaliacaos' => array(self::HAS_MANY, 'Avaliacao', 'idProjeto'),
-			'emailAluno0' => array(self::BELONGS_TO, 'Aluno', 'emailAluno'),
+			'alunos' => array(self::HAS_MANY, 'Aluno', 'email'),
+			'professors' => array(self::HAS_MANY, 'Professor', 'email'),
 		);
 	}
 
@@ -65,13 +58,9 @@ class Projeto extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idprojeto' => 'Idprojeto',
-			'tituloProjeto' => 'Titulo Projeto',
-			'disciplina' => 'Disciplina',
-			'palavrasChave' => 'Palavras Chave',
-			'projeto' => 'Projeto',
-			'resumo' => 'Resumo',
-			'emailAluno' => 'Email Aluno',
+			'email' => 'Email',
+			'senha' => 'Senha',
+			'tipo' => 'Tipo',
 		);
 	}
 
@@ -93,13 +82,9 @@ class Projeto extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idprojeto',$this->idprojeto);
-		$criteria->compare('tituloProjeto',$this->tituloProjeto,true);
-		$criteria->compare('disciplina',$this->disciplina,true);
-		$criteria->compare('palavrasChave',$this->palavrasChave,true);
-		$criteria->compare('projeto',$this->projeto,true);
-		$criteria->compare('resumo',$this->resumo,true);
-		$criteria->compare('emailAluno',$this->emailAluno,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('senha',$this->senha,true);
+		$criteria->compare('tipo',$this->tipo,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -110,7 +95,7 @@ class Projeto extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Projeto the static model class
+	 * @return Usuario the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

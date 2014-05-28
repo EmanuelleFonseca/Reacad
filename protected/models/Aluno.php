@@ -4,7 +4,6 @@
  * This is the model class for table "aluno".
  *
  * The followings are the available columns in table 'aluno':
- * @property integer $idAluno
  * @property string $nomeAluno
  * @property string $emailAluno
  * @property integer $codigoAluno
@@ -35,16 +34,15 @@ class Aluno extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nomeAluno, emailAluno, codigoAluno, cursoAluno, senhaAluno', 'required'),
+			array('nomeAluno, emailAluno, codigoAluno, cursoAluno, senhaAluno, imgPerfil', 'required'),
 			array('codigoAluno, telefoneAluno', 'numerical', 'integerOnly'=>true),
 			array('nomeAluno, imgPerfil', 'length', 'max'=>100),
 			array('emailAluno', 'length', 'max'=>50),
 			array('cursoAluno', 'length', 'max'=>70),
-			array('imgPerfil', 'file', 'types' => 'jpg,gif, jpeg, png'),
 			array('senhaAluno, curriculo', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idAluno, nomeAluno, emailAluno, codigoAluno, telefoneAluno, cursoAluno, senhaAluno, curriculo, imgPerfil', 'safe', 'on'=>'search'),
+			array('nomeAluno, emailAluno, codigoAluno, telefoneAluno, cursoAluno, senhaAluno, curriculo, imgPerfil', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,7 +54,7 @@ class Aluno extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'projetos' => array(self::HAS_MANY, 'Projeto', 'idAluno'),
+			'projetos' => array(self::HAS_MANY, 'Projeto', 'emailAluno'),
 		);
 	}
 
@@ -66,15 +64,14 @@ class Aluno extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idAluno' => 'Id Aluno',
-			'nomeAluno' => 'Nome',
-			'emailAluno' => 'Email:',
-			'codigoAluno' => 'Código:',
-			'telefoneAluno' => 'Telefone:',
-			'cursoAluno' => 'Curso:',
-			'senhaAluno' => 'Senha:',
-			'curriculo' => 'Link de Curriculo:',
-			'imgPerfil' => 'Foto de Perfil',
+			'nomeAluno' => 'Nome Aluno',
+			'emailAluno' => 'Email Aluno',
+			'codigoAluno' => 'Codigo Aluno',
+			'telefoneAluno' => 'Telefone Aluno',
+			'cursoAluno' => 'Curso Aluno',
+			'senhaAluno' => 'Senha Aluno',
+			'curriculo' => 'Curriculo',
+			'imgPerfil' => 'Img Perfil',
 		);
 	}
 
@@ -96,7 +93,6 @@ class Aluno extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idAluno',$this->idAluno);
 		$criteria->compare('nomeAluno',$this->nomeAluno,true);
 		$criteria->compare('emailAluno',$this->emailAluno,true);
 		$criteria->compare('codigoAluno',$this->codigoAluno);

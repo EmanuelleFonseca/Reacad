@@ -45,7 +45,7 @@ $this->menu=array(
   <li class="span8">
   	<h3>Título: <?php echo CHtml::link(CHtml::encode($model->tituloProjeto),'arquivos/' . $model->projeto); ?></h3>
   	
-  	<h6>Autor: <?php echo CHtml::link(CHtml::encode($model->idAluno0->nomeAluno), array('/aluno/view', 'id'=>$model->idAluno0->idAluno)); ?>  <?php $this->widget('bootstrap.widgets.TbMenu', array(
+  	<h6>Autor: <?php echo CHtml::link(CHtml::encode($model->emailAluno0->nomeAluno), array('/aluno/view', 'id'=>$model->emailAluno0->emailAluno)); ?>  <?php $this->widget('bootstrap.widgets.TbMenu', array(
                'type'=>'pills',
                'items'=>array(
 		         array('label'=>'Deletar ','icon'=>'trash', 'url'=>array('#'),'linkOptions'=>array('submit'=>array('delete','id'=>$model->idprojeto),'confirm'=>'Are you sure you want to delete this item?'), 'visible'=>!Yii::app()->user->isGuest),

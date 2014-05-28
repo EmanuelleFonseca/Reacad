@@ -27,7 +27,7 @@
 	<br />
 	
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idAluno')); ?>:</b>
-	<?php echo CHtml::encode($data->idAluno); ?>
+	<?php echo CHtml::encode($data->emailAluno); ?>
 	<br />
 
 

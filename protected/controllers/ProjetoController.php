@@ -77,8 +77,9 @@ class ProjetoController extends Controller
 		//teste
 		*/
 		if(isset($_POST['Projeto']))
-		{
+		{  
 			$model->attributes=$_POST['Projeto'];
+			$model->emailAluno=Yii::app()->user->id;
             $model->projeto=CUploadedFile::getInstance($model, 'projeto');
 
 			if($model->save())

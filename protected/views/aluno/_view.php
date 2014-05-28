@@ -7,7 +7,7 @@
     
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nomeAluno')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->nomeAluno), array('view', 'id'=>$data->idAluno)); ?>
+	<?php echo CHtml::link(CHtml::encode($data->nomeAluno), array('view', 'id'=>$data->emailAluno)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('emailAluno')); ?>:</b>

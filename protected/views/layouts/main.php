@@ -40,7 +40,7 @@
 					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create'), 'visible'=>Yii::app()->user->isGuest),
 					  array('label'=>'Enviar Projeto', 'url'=>array('/projeto/create'), 'visible'=>!Yii::app()->user->isGuest),
 					  array('label'=>'Pesquisar', 'url'=>array('/site/pesquisa')),
-					  array('label'=>'Perfil', 'url'=>array('/aluno/view', 'id'=>'idAluno'), 'visible'=>!Yii::app()->user->isGuest),
+					  array('label'=>'Perfil', 'url'=>array('/aluno/view', 'id'=>Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
 				      array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 					  
 				      

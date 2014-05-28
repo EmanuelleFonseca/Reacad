@@ -1,6 +1,6 @@
 <?php
 
-class AlunoController extends Controller
+class UsuarioController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,14 +28,14 @@ class AlunoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('admin','index','view','create', 'projetos'),
+				'actions'=>array('index','create','admin','view'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create', 'admin'  and 'update' actions
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('update','delete'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow admin user to perform  'delete' actions
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array(),
 				'users'=>array('admin'),
 			),
@@ -50,15 +50,8 @@ class AlunoController extends Controller
 	 * @param integer $id the ID of the model to be displayed
 	 */
 	public function actionView($id)
-	{   
+	{
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
-	}
-	
-	public function actionProjetos($id)
-	{   
-		$this->render('projetos',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
@@ -69,21 +62,20 @@ class AlunoController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Aluno;
+		$model=new Usuario;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Aluno']))
+		if(isset($_POST['Usuario']))
 		{
-			$model->attributes=$_POST['Aluno'];
-			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
-			
-			if($model->save()){
-			    if(strlen($model->imgPerfil)>0)
-                $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('/site/page', 'view'=>'geral'));
-			}
+			$model->attributes=$_POST['Usuario'];
+			if($model->save())
+			     if($model->tipo == 'Aluno'){
+				   $this->redirect(array('/aluno/create'));
+			  } else if($model->tipo == 'Professor' ){
+				   $this->redirect(array('professor/create'));
+				}
 		}
 
 		$this->render('create',array(
@@ -103,16 +95,11 @@ class AlunoController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Aluno']))
+		if(isset($_POST['Usuario']))
 		{
-			$model->attributes=$_POST['Aluno'];
-			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
-			
-			if($model->save()){
-			    if(strlen($model->imgPerfil)>0)
-                $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('view','id'=>$model->idAluno));
-			}
+			$model->attributes=$_POST['Usuario'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->email));
 		}
 
 		$this->render('update',array(
@@ -133,15 +120,13 @@ class AlunoController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
-	
-
 
 	/**
 	 * Lists all models.
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Aluno');
+		$dataProvider=new CActiveDataProvider('Usuario');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -152,10 +137,10 @@ class AlunoController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Aluno('search');
+		$model=new Usuario('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Aluno']))
-			$model->attributes=$_GET['Aluno'];
+		if(isset($_GET['Usuario']))
+			$model->attributes=$_GET['Usuario'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -166,12 +151,12 @@ class AlunoController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Aluno the loaded model
+	 * @return Usuario the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Aluno::model()->findByPk($id);
+		$model=Usuario::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -179,11 +164,11 @@ class AlunoController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Aluno $model the model to be validated
+	 * @param Usuario $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='aluno-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='usuario-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

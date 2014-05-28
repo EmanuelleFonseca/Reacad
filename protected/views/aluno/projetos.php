@@ -34,6 +34,10 @@ $this->menu=array(
 
 
 
+<div class="view">
+
+</div>
+
  </li>      
 </ul>  
 <hr> 
