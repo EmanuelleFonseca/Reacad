@@ -9,7 +9,6 @@ USE `reacad` ;
 -- Table `reacad`.`aluno`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `reacad`.`aluno` (
-  `idAluno` INT NOT NULL AUTO_INCREMENT,
   `nomeAluno` VARCHAR(100) NOT NULL,
   `emailAluno` VARCHAR(50) NOT NULL,
   `codigoAluno` INT NOT NULL,
@@ -18,7 +17,8 @@ CREATE TABLE IF NOT EXISTS `reacad`.`aluno` (
   `senhaAluno` VARCHAR(10) NOT NULL,
   `curriculo` VARCHAR(10) NULL,
   `imgPerfil` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`idAluno`))
+  PRIMARY KEY (`emailAluno`),
+  UNIQUE INDEX `codigoAluno_UNIQUE` (`codigoAluno` ASC))
 ENGINE = InnoDB;
 
 
@@ -33,7 +33,9 @@ CREATE TABLE IF NOT EXISTS `reacad`.`professor` (
   `senhaProfessor` INT NOT NULL,
   `areaEnsino` VARCHAR(90) NOT NULL,
   `siape` INT NOT NULL,
-  PRIMARY KEY (`idProfessor`))
+  PRIMARY KEY (`idProfessor`),
+  UNIQUE INDEX `siape_UNIQUE` (`siape` ASC),
+  UNIQUE INDEX `emailProfessor_UNIQUE` (`emailProfessor` ASC))
 ENGINE = InnoDB;
 
 
@@ -46,14 +48,14 @@ CREATE TABLE IF NOT EXISTS `reacad`.`projeto` (
   `disciplina` VARCHAR(90) NOT NULL,
   `palavrasChave` VARCHAR(100) NOT NULL,
   `projeto` VARCHAR(60) NOT NULL,
-  `idAluno` INT NOT NULL,
-  `resumo` VARCHAR(500) NOT NULL,
+  `resumo` VARCHAR(45) NOT NULL,
+  `emailAluno` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`idprojeto`),
-  INDEX `fk_projeto_aluno_idx` (`idAluno` ASC),
-  CONSTRAINT `fk_projeto_aluno`
-    FOREIGN KEY (`idAluno`)
-    REFERENCES `reacad`.`aluno` (`idAluno`)
-    ON DELETE CASCADE
+  INDEX `fk_projeto_aluno1_idx` (`emailAluno` ASC),
+  CONSTRAINT `fk_projeto_aluno1`
+    FOREIGN KEY (`emailAluno`)
+    REFERENCES `reacad`.`aluno` (`emailAluno`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -77,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `reacad`.`avaliacao` (
   CONSTRAINT `fk_avaliacao_projeto1`
     FOREIGN KEY (`idProjeto`)
     REFERENCES `reacad`.`projeto` (`idprojeto`)
-    ON DELETE CASCADE
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 

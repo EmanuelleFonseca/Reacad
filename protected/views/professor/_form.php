@@ -36,6 +36,24 @@
 		<?php echo $form->textField($model,'telefoneProfessor'); ?>
 		<?php echo $form->error($model,'telefoneProfessor'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'areaEnsino'); ?>
+		<?php echo $form->textField($model,'areaEnsino',array('size'=>60,'maxlength'=>90)); ?>
+		<?php echo $form->error($model,'areaEnsino'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'siape'); ?>
+		<?php echo $form->textField($model,'siape'); ?>
+		<?php echo $form->error($model,'siape'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'Foto de Perfil'); ?>
+		<?php echo $form->fileField($model,'imgPerfil',array('size'=>60,'maxlength'=>70)); ?>
+		<?php echo $form->error($model,'imgPerfil'); ?>
+	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'senhaProfessor'); ?>
@@ -43,17 +61,6 @@
 		<?php echo $form->error($model,'senhaProfessor'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'areaEnsino'); ?>
-		<?php echo $form->textField($model,'areaEnsino',array('size'=>60,'maxlength'=>90)); ?>
-		<?php echo $form->error($model,'areaEnsino'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'siape'); ?>
-		<?php echo $form->textField($model,'siape'); ?>
-		<?php echo $form->error($model,'siape'); ?>
-	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

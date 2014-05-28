@@ -82,7 +82,7 @@ class AlunoController extends Controller
 			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('/site/page', 'view'=>'geral'));
+				$this->redirect(array('view','id'=>$model->emailAluno));
 			}
 		}
 
@@ -111,7 +111,7 @@ class AlunoController extends Controller
 			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('view','id'=>$model->idAluno));
+				$this->redirect(array('view','id'=>$model->emailAluno));
 			}
 		}
 

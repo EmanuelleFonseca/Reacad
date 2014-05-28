@@ -37,13 +37,8 @@ $this->menu=array(
       <ul class="thumbnails">   
   <li class="span2">  
     <a href="#" class="thumbnail">  
-      <img src="<?php echo 'fotos/'.$model->imgPerfil ?> " alt="perfil" width="300" height="180" <?php echo CHtml::link(CHtml::encode($model->nomeAluno), array('view', 'id'=>$model->nomeAluno)); ?> 
+      <img src="<?php echo 'fotos/'.$model->imgPerfil ?> " alt="perfil" width="300" height="180" <?php echo CHtml::link(CHtml::encode($model->nomeAluno), array('view', 'id'=>$model->emailAluno)); ?> 
     </a>
-	<?php $this->widget('bootstrap.widgets.TbMenu', array(
-    'type'=>'list',
-    'items'=>array(
-       ),
-)); ?>
 
 <li class="span9">
 	<div class="row-fluid">

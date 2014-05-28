@@ -25,17 +25,7 @@
 		<?php echo $form->error($model,'nota'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idProfessor'); ?>
-		<?php echo $form->textField($model,'idProfessor'); ?>
-		<?php echo $form->error($model,'idProfessor'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idProjeto'); ?>
-		<?php echo $form->textField($model,'idProjeto'); ?>
-		<?php echo $form->error($model,'idProjeto'); ?>
-	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
