@@ -36,6 +36,7 @@ return array(
                 'bootstrap.gii',
             ),
 		),
+		'ProfessorLogin',
 		
 	),
 
@@ -43,6 +44,13 @@ return array(
 	'components'=>array(
 	    'bootstrap'=>array(
             'class'=>'bootstrap.components.Bootstrap',
+        ),
+        
+		'urlManager' => array(
+              'rules' => array(
+              'http://reacad/professor.com' => 'ProfessorLogin/default/index',
+              'http://reacad/professor/login' => 'ProfessorLogin/default/loginProfessor',
+              ),
         ),
 		
 		'user'=>array(

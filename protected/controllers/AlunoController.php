@@ -82,7 +82,7 @@ class AlunoController extends Controller
 			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('view','id'=>$model->emailAluno));
+				$this->redirect(Yii::app()->homeUrl);
 			}
 		}
 

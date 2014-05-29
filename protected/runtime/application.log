@@ -12587,3 +12587,285 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=projeto/create
 in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php (87)
 in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/29 05:55:15 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.nomeAluno" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('nomeAluno')
+#1 C:\xampp\htdocs\reacad\protected\views\yiichatPost\create.php(38): CWebUser->__get('nomeAluno')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\reacad\protected\controllers\YiichatPostController.php(70): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): YiichatPostController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('yiichatPost/cre...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/reacad/index.php?r=yiichatPost/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=emanuelleafonseca%40hotmail.com
+---
+2014/05/29 05:55:57 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('_id')
+#1 C:\xampp\htdocs\reacad\protected\views\yiichatPost\create.php(38): CWebUser->__get('_id')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\reacad\protected\controllers\YiichatPostController.php(70): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): YiichatPostController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('yiichatPost/cre...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/reacad/index.php?r=yiichatPost/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=emanuelleafonseca%40hotmail.com
+---
+2014/05/29 05:58:03 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser._id" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('_id')
+#1 C:\xampp\htdocs\reacad\protected\views\yiichatPost\create.php(38): CWebUser->__get('_id')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#6 C:\xampp\htdocs\reacad\protected\controllers\YiichatPostController.php(70): CController->render('create', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): YiichatPostController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('yiichatPost/cre...')
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/reacad/index.php?r=yiichatPost/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/view&id=emanuelleafonseca%40hotmail.com
+---
+2014/05/29 06:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/views/default".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/views/default&view=index
+---
+2014/05/29 06:54:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/index
+---
+2014/05/29 06:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professorLogin/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professorLogin/index
+---
+2014/05/29 06:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professorLogin/default/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professorLogin/default/index
+---
+2014/05/29 07:07:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 07:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login-Professor".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login-Professor')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login-Professor')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login-Professor
+---
+2014/05/29 07:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login-professor".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login-professor')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login-professor')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login-professor
+---
+2014/05/29 07:19:59 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#1 C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\DefaultController.php(30): CController->render('login', Array)
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLoginProfessor()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('loginProfessor')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/05/29 07:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 07:58:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 07:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 08:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 08:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 08:03:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 08:05:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/login
+---
+2014/05/29 08:09:23 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.homeUrl" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('homeUrl')
+#1 C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\DefaultController.php(27): CWebUser->__get('homeUrl')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLoginProfessor()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('loginProfessor')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/05/29 08:15:51 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.defaultUrl" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('defaultUrl')
+#1 C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\DefaultController.php(27): CWebUser->__get('defaultUrl')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLoginProfessor()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('loginProfessor')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/05/29 08:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php:176
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(55): AlunoController->loadModel('prof@hotmail.co...')
+#1 [internal function]: AlunoController->actionView('prof@hotmail.co...')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(AlunoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AlunoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/view&id=prof%40hotmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/index
+---
+2014/05/29 08:27:28 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Professor".
+in C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
