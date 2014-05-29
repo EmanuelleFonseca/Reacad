@@ -17,6 +17,7 @@ return array(
 
 	// autoloading model and component classes
 	'import'=>array(
+	    'application.extensions.yiichat.*',
 		'application.models.*',
 		'application.components.*',
 	),

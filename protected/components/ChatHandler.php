@@ -16,9 +16,9 @@ class ChatHandler extends YiiChatDbHandlerBase {
     protected function getIdentityName(){
         // find the identity name here
         // example: 
-        //  $model = MyPeople::model()->findByPk($this->getIdentity());
-        //  return $model->userFullName();
-        return "jhonn doe"; 
+         //$model = Aluno::model()->findByPk($this->getIdentity());
+         //return $model->nomeAluno();
+        return Yii::app()->user->id; 
     }
     protected function getDateFormatted($value){
         // format the date numeric $value

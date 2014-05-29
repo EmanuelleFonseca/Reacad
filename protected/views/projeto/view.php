@@ -61,7 +61,9 @@ $this->menu=array(
 		'palavrasChave',
 		'resumo'
 	),
+
 )); ?>
+
 
   </li>    
 </ul>  

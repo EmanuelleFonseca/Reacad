@@ -11,21 +11,7 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'idAvaliacao'); ?>
-		<?php echo $form->textField($model,'idAvaliacao'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'nota'); ?>
-		<?php echo $form->textField($model,'nota'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'idProfessor'); ?>
-		<?php echo $form->textField($model,'idProfessor'); ?>
-	</div>
-
+	
 	<div class="row">
 		<?php echo $form->label($model,'idProjeto'); ?>
 		<?php echo $form->textField($model,'idProjeto'); ?>

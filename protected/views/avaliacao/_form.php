@@ -24,6 +24,17 @@
 		<?php echo $form->textField($model,'nota'); ?>
 		<?php echo $form->error($model,'nota'); ?>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->hiddenField($model,'idProjeto'); ?>
+		
+	</div>
+	
+	<div class="row">
+		<?php echo $form->hiddenField($model,'idProfessor'); ?>
+		
+	</div>
+	
 
 
 
