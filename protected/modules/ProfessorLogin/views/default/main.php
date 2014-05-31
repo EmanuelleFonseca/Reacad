@@ -1,42 +1,20 @@
-<head>
 <?php /* @var $this Controller */ ?>
-<?php $this->beginContent('//layouts/main'); ?>
-<div id="content">
-	<?php echo $content; ?>
-	
-
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sl-slide.css">
-
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-	
-	<!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-	
-</ul>
-
-
-<?php $this->endContent(); ?>
- 
- 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+    <link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/imagens/icone.png">
+   
+	<?php
+	echo Yii::app()->bootstrap->registerAllCss();
+	echo Yii::app()->bootstrap->registerCoreScripts();
+	?>
+    <link rel="shortcut icon" href="imagens/icone.png"/>
+	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
+
+<body>
 <!-- page -->
 <!-- menu -->
 <header class="navbar navbar-fixed-top">
@@ -56,7 +34,7 @@
 		      <?php $this->widget('zii.widgets.CMenu',array(
 		          
 			      'items'=>array(
-				      array('label'=>'Início', 'url'=>array('/site/index')),
+				     
 				      array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
 					  array('label'=>'F.A.Q.', 'url'=>array('/site/page', 'view'=>'faq')),
 				      //array('label'=>'Contact', 'url'=>array('/site/contact')),
@@ -113,7 +91,25 @@
         </div>
     </header>
     <!-- /mainmenu -->	
+ 
+	<br/><br/><br/><br/>
+	<div class="container">
+	
+	<?php echo $content; ?>
+	
+	
+	
 
+<!-- footer -->
+	<div class="footer text-center">
+		Copyright &copy; <?php echo date('Y'); ?> by REACAD.<br/>
+		Todos os direitos reservados.<br/>
+		<?php echo Yii::powered(); ?>
+	</div>
+ <!-- footer -->
+
+  </div>
+<!-- page -->
+
+</body>
 </html>
-
-

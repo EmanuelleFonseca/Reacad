@@ -55,6 +55,11 @@ class ProjetoController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+	
+	public function currentDate(){
+        $date = date('m-d-Y-h-i-s', time());
+        return $date;
+    }
 
 	/**
 	 * Creates a new model.
@@ -80,11 +85,12 @@ class ProjetoController extends Controller
 		{  
 			$model->attributes=$_POST['Projeto'];
 			$model->emailAluno=Yii::app()->user->id;
-            $model->projeto=CUploadedFile::getInstance($model, 'projeto');
-
+            $upload = CUploadedFile::getInstance($model, 'projeto');
+            $fileName = "{$this->currentDate()}.pdf";
+            $model->projeto = $fileName; 
 			if($model->save())
 			    if(strlen($model->projeto)>0)
-                $model->projeto->saveAs('arquivos/'.$model->projeto);
+				$upload->saveAs("arquivos/".$fileName);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 
@@ -108,10 +114,12 @@ class ProjetoController extends Controller
 		if(isset($_POST['Projeto']))
 		{
 			$model->attributes=$_POST['Projeto'];
-			$model->projeto=CUploadedFile::getInstance($model, 'projeto');
+			$upload = CUploadedFile::getInstance($model, 'projeto');
+            $fileName = "{$this->currentDate()}.pdf";
+            $model->projeto = $fileName; 
 			if($model->save())
 			    if(strlen($model->projeto)>0)
-                $model->projeto->saveAs('arquivos/'.$model->projeto);
+                $upload->saveAs("arquivos/".$fileName);
 				$this->redirect(array('view','id'=>$model->idprojeto));
 		}
 

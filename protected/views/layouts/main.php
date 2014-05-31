@@ -15,48 +15,6 @@
 </head>
 
 <body>
-<!-- page -->
-<!-- menu -->
-<header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-			
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-				<a class = "brand""href"="<?php echo Yii::app()->homeUrl ; ?>">
-				<img src = "imagens/icone.png" width = 30px height = 15px>
-		      <?php echo CHtml::encode(Yii::app()->name); ?>
-		   </a>
-		   <div class = "nav-collapse collapse">
-		      <?php $this->widget('zii.widgets.CMenu',array(
-			      'items'=>array(
-				      array('label'=>'Início', 'url'=>array('/site/index')),
-				      array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
-					  array('label'=>'F.A.Q.', 'url'=>array('/site/page', 'view'=>'faq')),
-				      //array('label'=>'Contact', 'url'=>array('/site/contact')),
-					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create'), 'visible'=>Yii::app()->user->isGuest),
-					  array('label'=>'Perfil', 'url'=>array('/aluno/view', 'id'=>Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
-					  array('label'=>'Autores', 'url'=>array('/aluno/index')),
-					  array('label'=>'Projetos', 'url'=>array('/projeto/index')),
-					  array('label'=>'Fórum', 'url'=>array('/yiichatPost/create'), 'visible'=>!Yii::app()->user->isGuest),
-				      array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-					  
-				      
-				      array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			        ),
-			      'htmlOptions' =>array(
-			         'class' => "nav navbar-nav"
-			        ),
-		        )); ?>
-		   </div>     
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
-    </header>
-    <!-- /mainmenu -->	
  
 	<br/><br/><br/><br/>
 	<div class="container">

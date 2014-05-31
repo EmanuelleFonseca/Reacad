@@ -1,6 +1,6 @@
 <head>
 <?php /* @var $this Controller */ ?>
-<?php $this->beginContent('//layouts/main'); ?>
+<?php $this->beginContent('ProfessorLogin/views/layouts/mainProf'); ?>
 <div id="content">
 	<?php echo $content; ?>
 	
@@ -37,8 +37,6 @@
  
  
 </head>
-<!-- page -->
-<!-- menu -->
 <header class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
@@ -52,67 +50,34 @@
 				<img src = "imagens/icone.png" width = 30px height = 15px>
 		      <?php echo CHtml::encode(Yii::app()->name); ?>
 		   </a>
-		   <div class = "nav-collapse collapse pull-right">
+		   <div class = "nav-collapse collapse">
 		      <?php $this->widget('zii.widgets.CMenu',array(
-		          
 			      'items'=>array(
 				      array('label'=>'Início', 'url'=>array('/site/index')),
 				      array('label'=>'Sobre', 'url'=>array('/site/page', 'view'=>'about')),
 					  array('label'=>'F.A.Q.', 'url'=>array('/site/page', 'view'=>'faq')),
 				      //array('label'=>'Contact', 'url'=>array('/site/contact')),
 					  array('label'=>'Cadastre-se', 'url'=>array('/aluno/create'), 'visible'=>Yii::app()->user->isGuest),
+					  array('label'=>'Perfil', 'url'=>array('/aluno/view', 'id'=>Yii::app()->user->id), 'visible'=>!Yii::app()->user->isGuest),
 					  array('label'=>'Autores', 'url'=>array('/aluno/index')),
 					  array('label'=>'Projetos', 'url'=>array('/projeto/index')),
 					  array('label'=>'Fórum', 'url'=>array('/yiichatPost/create'), 'visible'=>!Yii::app()->user->isGuest),
 				      array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+					  
 				      
-				      ),
+				      array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+			        ),
 			      'htmlOptions' =>array(
 			         'class' => "nav navbar-nav"
 			        ),
-			               
 		        )); ?>
-		          <?php $this->widget('bootstrap.widgets.TbButtonGroup', array(
-        // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-        'buttons'=>array(
-            array('icon'=> 'user','visible'=>!Yii::app()->user->isGuest,'items'=>array(
-                array('label'=>'Perfil', 'icon'=> 'user','url'=>array('/aluno/view', 'id'=>Yii::app()->user->id)),
-				array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#')),
-		        array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#')),
-                array('label'=>'Configurações','icon'=>'cog', 'url'=>array('update', 'id'=>Yii::app()->user->id)),
-                array('label'=>'Enviar Projeto','icon'=>'book', 'url'=>array('/projeto/create')),
-			    array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			        
-            )),
-        ),
-    )); ?>
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
-          &nbsp;
 		   </div>     
-		   
-   
-
                 </div><!--/.nav-collapse -->
             </div>
         </div>
     </header>
     <!-- /mainmenu -->	
+ 
 
 </html>
 

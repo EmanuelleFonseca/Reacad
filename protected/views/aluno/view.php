@@ -42,18 +42,7 @@ $this->menu=array(
     </a>
 
 <li class="span9">
-	<div class="row-fluid">
-        <div class="span7">
-            <?php $this->widget('bootstrap.widgets.TbMenu', array(
-               'type'=>'pills',
-               'items'=>array(
-		          array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-		          array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#'), 'visible'=>!Yii::app()->user->isGuest),
-                  array('label'=>'Configurações','icon'=>'cog', 'url'=>array('update', 'id'=>$model->emailAluno), 'visible'=>!Yii::app()->user->isGuest),
-                  array('label'=>'Enviar Projeto','icon'=>'book', 'url'=>array('/projeto/create'), 'visible'=>!Yii::app()->user->isGuest),
-			   ))); ?>    
-        </div>
-    </div>
+	
   <br/>
 
 <?php $this->widget('bootstrap..widgets.TbDetailView', array(
