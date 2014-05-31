@@ -56,6 +56,12 @@ $this->menu=array(
 	),
 )); ?>
 
+<?php $this->widget('bootstrap.widgets.TbButton', array(
+                            'icon'=>'book',
+                            'label'=>'Projetos', 
+                            'url'=>array('/aluno/projetos', 'id'=>$model->emailAluno)
+				     )); ?>
+
 
 
  </li>      

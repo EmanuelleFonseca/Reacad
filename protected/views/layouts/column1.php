@@ -79,7 +79,7 @@
                 array('label'=>'Perfil', 'icon'=> 'user','url'=>array('/aluno/view', 'id'=>Yii::app()->user->id)),
 				array('label'=>'Mensagens','icon'=>'envelope', 'url'=>array('#')),
 		        array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#')),
-                array('label'=>'Configurações','icon'=>'cog', 'url'=>array('update', 'id'=>Yii::app()->user->id)),
+                array('label'=>'Configurações','icon'=>'cog', 'url'=>array('/aluno/update', 'id'=>Yii::app()->user->id)),
                 array('label'=>'Enviar Projeto','icon'=>'book', 'url'=>array('/projeto/create')),
 			    array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			        

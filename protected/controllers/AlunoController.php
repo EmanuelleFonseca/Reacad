@@ -98,28 +98,31 @@ class AlunoController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		if(Yii::app()->user->id == $id){   
+		   $model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		   // Uncomment the following line if AJAX validation is needed
+		  // $this->performAjaxValidation($model);
 
-		if(isset($_POST['Aluno']))
-		{
-			$model->attributes=$_POST['Aluno'];
-			$model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
-			
-			if($model->save()){
-			    if(strlen($model->imgPerfil)>0)
-                $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(array('view','id'=>$model->emailAluno));
-			}
-		}
+		   if(isset($_POST['Aluno']))
+		   {
+			   $model->attributes=$_POST['Aluno'];
+			   $model->imgPerfil=CUploadedFile::getInstance($model, 'imgPerfil');
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+			   if($model->save()){
+			       if(strlen($model->imgPerfil)>0)
+                   $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
+				   $this->redirect(array('view','id'=>$model->emailAluno));
+			   }
+		   }
+
+		   $this->render('update',array(
+			   'model'=>$model,
+		   ));
+		 } else{
+		 	throw new CHttpException(403,'Você não pode acessar esta página.');
+		 }
 	}
-
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -176,7 +179,8 @@ class AlunoController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-
+	
+	
 	/**
 	 * Performs the AJAX validation.
 	 * @param Aluno $model the model to be validated

@@ -44,4 +44,6 @@ class ProfessorLoginModule extends CWebModule
         else
             return false;
     }
+
+    
 }
