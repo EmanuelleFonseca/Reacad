@@ -6,11 +6,11 @@
  * The followings are the available columns in table 'avaliacao':
  * @property integer $idAvaliacao
  * @property integer $nota
- * @property integer $idProfessor
  * @property integer $idProjeto
+ * @property string $emailProfessor
  *
  * The followings are the available model relations:
- * @property Professor $idProfessor0
+ * @property Professor $emailProfessor0
  * @property Projeto $idProjeto0
  */
 class Avaliacao extends CActiveRecord
@@ -31,11 +31,12 @@ class Avaliacao extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nota, idProfessor, idProjeto', 'required'),
-			array('nota, idProfessor, idProjeto', 'numerical', 'integerOnly'=>true),
+			array('nota, idProjeto, emailProfessor', 'required'),
+			array('nota, idProjeto', 'numerical', 'integerOnly'=>true),
+			array('emailProfessor', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idAvaliacao, nota, idProfessor, idProjeto', 'safe', 'on'=>'search'),
+			array('idAvaliacao, nota, idProjeto, emailProfessor', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,7 +48,7 @@ class Avaliacao extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idProfessor0' => array(self::BELONGS_TO, 'Professor', 'idProfessor'),
+			'emailProfessor0' => array(self::BELONGS_TO, 'Professor', 'emailProfessor'),
 			'idProjeto0' => array(self::BELONGS_TO, 'Projeto', 'idProjeto'),
 		);
 	}
@@ -60,8 +61,8 @@ class Avaliacao extends CActiveRecord
 		return array(
 			'idAvaliacao' => 'Id Avaliacao',
 			'nota' => 'Nota',
-			'idProfessor' => 'Id Professor',
 			'idProjeto' => 'Id Projeto',
+			'emailProfessor' => 'Email Professor',
 		);
 	}
 
@@ -85,8 +86,8 @@ class Avaliacao extends CActiveRecord
 
 		$criteria->compare('idAvaliacao',$this->idAvaliacao);
 		$criteria->compare('nota',$this->nota);
-		$criteria->compare('idProfessor',$this->idProfessor);
 		$criteria->compare('idProjeto',$this->idProjeto);
+		$criteria->compare('emailProfessor',$this->emailProfessor,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

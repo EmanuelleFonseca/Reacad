@@ -45,15 +45,13 @@ $this->menu=array(
   <li class="span8">
   	<h3>Título: <?php echo CHtml::link(CHtml::encode($model->tituloProjeto),'arquivos/' . $model->projeto); ?></h3>
   	
-  	<h6>Autor: <?php echo CHtml::link(CHtml::encode($model->emailAluno0->nomeAluno), array('/aluno/view', 'id'=>$model->emailAluno0->emailAluno)); ?>  <?php $this->widget('bootstrap.widgets.TbMenu', array(
+  	Autor: <?php echo CHtml::link(CHtml::encode($model->emailAluno0->nomeAluno), array('/aluno/view', 'id'=>$model->emailAluno0->emailAluno)); ?>
+    	   <br/>  <img src = "imagens/star.gif"> <?php echo $model->MediaNotas();?>  <?php $this->widget('bootstrap.widgets.TbMenu', array(
                'type'=>'pills',
                'items'=>array(
-                 array('label'=>'Notas', 'icon'=>'star-empty','url'=>array('/avaliacao/index')),
-                 array('label'=>'Avaliar Projeto', 'icon'=>'pencil','url'=>array('/avaliacao/create')),
-		         array('label'=>'Deletar', 'icon'=>'trash', 'url'=>array('#'),'linkOptions'=>array('submit'=>array('delete','id'=>$model->idprojeto),'confirm'=>'Are you sure you want to delete this item?'), 'visible'=>!Yii::app()->user->isGuest), 
-     ) ) ); ?>    
-    </h6>
-    
+                 array('label'=>'(Avaliar Projeto)','url'=>array('/avaliacao/create')),
+		         array('label'=>'Deletar', 'icon'=>'trash','visible'=>!Yii::app()->user->isGuest, 'url'=>array('#'),'linkOptions'=>array('submit'=>array('delete','id'=>$model->idprojeto),'confirm'=>'Are you sure you want to delete this item?')), 
+     ) )); ?>  
   	<?php $this->widget('bootstrap..widgets.TbDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(

@@ -25,6 +25,31 @@ class Projeto extends CActiveRecord
 	{
 		return 'projeto';
 	}
+	
+	public function MediaNotas()
+	{
+		$nota = null;
+		   
+		$criteria=new CDbCriteria;
+        $criteria->select='nota';  
+        $criteria->condition='idProjeto=:idProjeto';
+        $criteria->params=array(':idProjeto'=>$this->idprojeto);
+        $post=Avaliacao::model()->findAll($criteria);
+		
+		if($post != null){
+			$cont = count($post); 
+			foreach($post as $post){
+				$nota += $post->nota;
+			}
+		
+			   return (($nota/$cont).' Estrelas');
+			
+			
+		}
+		else{
+			return 'Sem Notas';
+		}
+	}
 
 	/**
 	 * @return array validation rules for model attributes.

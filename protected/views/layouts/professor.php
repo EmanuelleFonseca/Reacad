@@ -69,7 +69,7 @@
         // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
         'buttons'=>array(
             array('icon'=> 'user','visible'=>!Yii::app()->user->isGuest,'items'=>array(
-                array('label'=>'Perfil', 'icon'=> 'user','url'=>array('/professor/view', 'id'=>Yii::app()->user->id)),
+                array('label'=>'Perfil', 'icon'=> 'user','url'=>array('default/viewProfessor', 'id'=>Yii::app()->user->id)),
 		        array('label'=>'Avaliações','icon'=>'pencil', 'url'=>array('#')),
                 array('label'=>'Configurações','icon'=>'cog', 'url'=>array('update', 'id'=>Yii::app()->user->id)),
 			    array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)

@@ -1,16 +1,57 @@
 <?php
 
-class DefaultController extends Controller
+class ProfessorController extends Controller
 {
+	/**
+	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
+	 * using two-column layout. See 'protected/views/layouts/column2.php'.
+	 */
+	public $layout='//layouts/column1';
 
+	/**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+			'postOnly + delete', // we only allow deletion via POST request
+		);
+	}
+
+	/**
+	 * Specifies the access control rules.
+	 * This method is used by the 'accessControl' filter.
+	 * @return array access control rules
+	 */
+	public function accessRules()
+	{
+		return array(
+			array('allow',  // allow all users to perform 'index' and 'view' actions
+				'actions'=>array('create','admin','index','view'),
+				'users'=>array('*'),
+			),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('update'),
+				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
+				'users'=>array('*'),
+			),
+		);
+	}
 
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionViewProfessor($id)
+	public function actionView($id)
 	{
-		$this->render('viewProfessor',array(
+		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
@@ -30,7 +71,7 @@ class DefaultController extends Controller
 		{
 			$model->attributes=$_POST['Professor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->emailProfessor));
+				$this->redirect(array('view','id'=>$model->idProfessor));
 		}
 
 		$this->render('create',array(
@@ -54,7 +95,7 @@ class DefaultController extends Controller
 		{
 			$model->attributes=$_POST['Professor'];
 			if($model->save())
-				$this->redirect(array('viewProfessor','id'=>$model->emailProfessor));
+				$this->redirect(array('view','id'=>$model->idProfessor));
 		}
 
 		$this->render('update',array(
@@ -75,54 +116,22 @@ class DefaultController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+
+	/**
+	 * Lists all models.
+	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+		$dataProvider=new CActiveDataProvider('Professor');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
 	}
-	
-	public function actionLoginProfessor()
-	{
-		$model=new LoginForm('Professor');
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
-
-		// collect user input data
-		if(isset($_POST['LoginForm']))
-		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(array('default/index'));
-		}
-		// display the login form
-		$this->render('loginProfessor',array('model'=>$model));
-	}
-	
-	
-	public function actionLogout()
-	{
-		Yii::app()->user->logout(false);
-		$this->redirect(Yii::app()->getModule('ProfessorLogin')->user->loginUrl);
-	}
-	
-	
-	
-	public function actionError()
-	{
-		if($error=Yii::app()->errorHandler->error)
-		{
-			if(Yii::app()->request->isAjaxRequest)
-				echo $error['message'];
-			else
-				$this->render('error', $error);
-		}
-	}
-		public function actionAdmin()
+	/**
+	 * Manages all models.
+	 */
+	public function actionAdmin()
 	{
 		$model=new Professor('search');
 		$model->unsetAttributes();  // clear any default values
@@ -145,7 +154,7 @@ class DefaultController extends Controller
 	{
 		$model=Professor::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist');
+			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
 

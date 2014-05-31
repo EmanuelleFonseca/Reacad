@@ -56,6 +56,7 @@ class ProjetoController extends Controller
 		));
 	}
 	
+	
 	public function currentDate(){
         $date = date('m-d-Y-h-i-s', time());
         return $date;

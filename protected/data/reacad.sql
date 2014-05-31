@@ -26,14 +26,13 @@ ENGINE = InnoDB;
 -- Table `reacad`.`professor`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `reacad`.`professor` (
-  `idProfessor` INT NOT NULL AUTO_INCREMENT,
   `nomeProfessor` VARCHAR(100) NOT NULL,
   `emailProfessor` VARCHAR(50) NOT NULL,
   `telefoneProfessor` INT NULL,
   `senhaProfessor` INT NOT NULL,
   `areaEnsino` VARCHAR(90) NOT NULL,
   `siape` INT NOT NULL,
-  PRIMARY KEY (`idProfessor`),
+  PRIMARY KEY (`emailProfessor`),
   UNIQUE INDEX `siape_UNIQUE` (`siape` ASC),
   UNIQUE INDEX `emailProfessor_UNIQUE` (`emailProfessor` ASC))
 ENGINE = InnoDB;
@@ -66,22 +65,41 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `reacad`.`avaliacao` (
   `idAvaliacao` INT NOT NULL AUTO_INCREMENT,
   `nota` INT NOT NULL,
-  `idProfessor` INT NOT NULL,
   `idProjeto` INT NOT NULL,
+  `emailProfessor` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`idAvaliacao`),
-  INDEX `fk_avaliacao_professor1_idx` (`idProfessor` ASC),
   INDEX `fk_avaliacao_projeto1_idx` (`idProjeto` ASC),
-  CONSTRAINT `fk_avaliacao_professor1`
-    FOREIGN KEY (`idProfessor`)
-    REFERENCES `reacad`.`professor` (`idProfessor`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  INDEX `fk_avaliacao_professor1_idx` (`emailProfessor` ASC),
   CONSTRAINT `fk_avaliacao_projeto1`
     FOREIGN KEY (`idProjeto`)
     REFERENCES `reacad`.`projeto` (`idprojeto`)
     ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_avaliacao_professor1`
+    FOREIGN KEY (`emailProfessor`)
+    REFERENCES `reacad`.`professor` (`emailProfessor`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `reacad`.`yiichat_post`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `reacad`.`yiichat_post` (
+  `id` CHAR(40) NOT NULL DEFAULT '',
+  `chat_id` CHAR(40) NULL DEFAULT NULL,
+  `post_identity` CHAR(40) NULL DEFAULT NULL,
+  `owner` CHAR(20) NULL DEFAULT NULL,
+  `created` BIGINT(30) NULL DEFAULT NULL,
+  `text` BLOB NULL DEFAULT NULL,
+  `data` BLOB NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `yiichat_chat_id` (`chat_id` ASC),
+  INDEX `yiichat_chat_id_identity` (`chat_id` ASC, `post_identity` ASC))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

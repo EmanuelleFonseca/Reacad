@@ -4,7 +4,6 @@
  * This is the model class for table "professor".
  *
  * The followings are the available columns in table 'professor':
- * @property integer $idProfessor
  * @property string $nomeProfessor
  * @property string $emailProfessor
  * @property integer $telefoneProfessor
@@ -40,7 +39,7 @@ class Professor extends CActiveRecord
 			array('areaEnsino', 'length', 'max'=>90),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idProfessor, nomeProfessor, emailProfessor, telefoneProfessor, senhaProfessor, areaEnsino, siape', 'safe', 'on'=>'search'),
+			array('nomeProfessor, emailProfessor, telefoneProfessor, senhaProfessor, areaEnsino, siape', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,7 +51,7 @@ class Professor extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'avaliacaos' => array(self::HAS_MANY, 'Avaliacao', 'idProfessor'),
+			'avaliacaos' => array(self::HAS_MANY, 'Avaliacao', 'emailProfessor'),
 		);
 	}
 
@@ -62,7 +61,6 @@ class Professor extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'idProfessor' => 'Id Professor',
 			'nomeProfessor' => 'Nome Professor',
 			'emailProfessor' => 'Email Professor',
 			'telefoneProfessor' => 'Telefone Professor',
@@ -90,7 +88,6 @@ class Professor extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idProfessor',$this->idProfessor);
 		$criteria->compare('nomeProfessor',$this->nomeProfessor,true);
 		$criteria->compare('emailProfessor',$this->emailProfessor,true);
 		$criteria->compare('telefoneProfessor',$this->telefoneProfessor);

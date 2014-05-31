@@ -130,10 +130,10 @@ class SiteController extends Controller
 	      $this->render('painel');
 	   }
 	}
-	public function actionPesquisa()
+	public function actionAreaProfessor()
 	{  
 	   
-	      $this->render('pesquisa');
+	      $this->render('areaProfessor');
 	  
 	}
 }
