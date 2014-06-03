@@ -34,12 +34,13 @@ class Aluno extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nomeAluno, emailAluno, codigoAluno, cursoAluno, senhaAluno, imgPerfil', 'required'),
-			array('codigoAluno, telefoneAluno', 'numerical', 'integerOnly'=>true),
+			array('nomeAluno, emailAluno, codigoAluno, cursoAluno, senhaAluno, imgPerfil, , telefoneAluno', 'required'),
+			array('codigoAluno', 'numerical', 'integerOnly'=>true),
 			array('nomeAluno, imgPerfil', 'length', 'max'=>100),
 			array('emailAluno', 'length', 'max'=>50),
 			array('cursoAluno', 'length', 'max'=>70),
-			array('senhaAluno, curriculo', 'length', 'max'=>10),
+			array('senhaAluno', 'length', 'max'=>10),
+			array('curriculo', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('nomeAluno, emailAluno, codigoAluno, telefoneAluno, cursoAluno, senhaAluno, curriculo, imgPerfil', 'safe', 'on'=>'search'),
@@ -64,13 +65,13 @@ class Aluno extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'nomeAluno' => 'Nome Aluno',
-			'emailAluno' => 'Email Aluno',
-			'codigoAluno' => 'Codigo Aluno',
-			'telefoneAluno' => 'Telefone Aluno',
-			'cursoAluno' => 'Curso Aluno',
-			'senhaAluno' => 'Senha Aluno',
-			'curriculo' => 'Curriculo',
+			'nomeAluno' => 'Nome: ',
+			'emailAluno' => 'Email: ',
+			'codigoAluno' => 'Código: ',
+			'telefoneAluno' => 'Telefone: ',
+			'cursoAluno' => 'Curso: ',
+			'senhaAluno' => 'Senha: ',
+			'curriculo' => 'Link de Curriculo: ',
 			'imgPerfil' => 'Img Perfil',
 		);
 	}

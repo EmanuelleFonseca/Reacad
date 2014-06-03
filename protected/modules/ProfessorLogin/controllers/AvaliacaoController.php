@@ -6,7 +6,7 @@ class AvaliacaoController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column1';
+	public $layout='//layouts/professor';
 
 	/**
 	 * @return array action filters
@@ -67,17 +67,17 @@ class AvaliacaoController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
+	public function actionCreate($idproj)
+	{   
 		$model=new Avaliacao;
-
+        $model->idProjeto = $idproj;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
         if(isset($_POST['Avaliacao']))
 		{
 			$model->attributes=$_POST['Avaliacao'];
-			
+			$model->emailProfessor = Yii::app()->user->id;
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idAvaliacao));
 		}

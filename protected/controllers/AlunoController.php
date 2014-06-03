@@ -28,7 +28,7 @@ class AlunoController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('admin','index','view','create', 'projetos'),
+				'actions'=>array('admin','index','view','create', 'projetos', 'redirect'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create', 'admin'  and 'update' actions
@@ -62,6 +62,11 @@ class AlunoController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+	
+	public function actionRedirect()
+	{   
+		$this->render('redirect');
+	}
 
 	/**
 	 * Creates a new model.
@@ -82,7 +87,7 @@ class AlunoController extends Controller
 			if($model->save()){
 			    if(strlen($model->imgPerfil)>0)
                 $model->imgPerfil->saveAs('fotos/'.$model->imgPerfil);
-				$this->redirect(Yii::app()->homeUrl);
+				$this->redirect(array('aluno/redirect'));
 			}
 		}
 

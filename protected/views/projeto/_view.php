@@ -15,7 +15,7 @@
 	<div class ="container">
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tituloProjeto')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->tituloProjeto),'arquivos/' . $data->projeto); ?>
+	<?php echo CHtml::link(CHtml::encode($data->tituloProjeto), array('view', 'id'=>$data->idprojeto)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('disciplina')); ?>:</b>

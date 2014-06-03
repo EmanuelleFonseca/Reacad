@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'avaliacao':
  * @property integer $idAvaliacao
- * @property integer $nota
+ * @property double $nota
  * @property integer $idProjeto
  * @property string $emailProfessor
  *
@@ -32,7 +32,8 @@ class Avaliacao extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nota, idProjeto, emailProfessor', 'required'),
-			array('nota, idProjeto', 'numerical', 'integerOnly'=>true),
+			array('idProjeto', 'numerical', 'integerOnly'=>true),
+			array('nota', 'numerical'),
 			array('emailProfessor', 'length', 'max'=>50),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

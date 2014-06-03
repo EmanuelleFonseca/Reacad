@@ -21,27 +21,30 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nota'); ?>
-		<?php echo $form->textField($model,'nota'); ?>
+		<?php echo $form->dropDownList($model,'nota',array(
+		  0 => 0,
+		  1 => 1,
+		  3 =>3,
+		  4 =>4,
+		  5 =>5,
+		  6 =>6,
+		  7 =>7,
+		  8 =>8,
+		  9 =>9,
+		  10 =>10,)); ?>
 		<?php echo $form->error($model,'nota'); ?>
 	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model,'idProjeto'); ?>
-		<?php echo $form->textField($model,'idProjeto'); ?>
-		<?php echo $form->error($model,'idProjeto'); ?>
+		<?php echo $form->hiddenField($model,'idProjeto'); ?>
 	</div>
 	
-	<div class="row">
-		<?php echo $form->labelEx($model,'emailProfessor'); ?>
-		<?php echo $form->textField($model,'emailProfessor'); ?>
-		<?php echo $form->error($model,'emailProfessor'); ?>
-	</div>
 	
 
 
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

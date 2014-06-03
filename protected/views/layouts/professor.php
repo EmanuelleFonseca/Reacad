@@ -56,8 +56,7 @@
 		      <?php $this->widget('zii.widgets.CMenu',array(
 		          
 			      'items'=>array(
-				      array('label'=>'Início', 'url'=>array('/site/index')),
-					  array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				      array('label'=>'Login', 'url'=>array('default/loginProfessor'), 'visible'=>Yii::app()->user->isGuest),
 				      
 				      ),
 			      'htmlOptions' =>array(

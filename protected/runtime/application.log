@@ -15511,3 +15511,989 @@ Stack trace:
 REQUEST_URI=/reacad/index.php?r=avaliacao/create
 HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=28
 ---
+2014/05/31 21:59:16 [error] [php] Undefined variable: idProjeto0 (C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AvaliacaoController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AvaliacaoController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): AvaliacaoController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AvaliacaoController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+in C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php (80)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/31 22:00:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/avaliacao/create
+---
+2014/05/31 22:01:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create&id=4
+---
+2014/05/31 22:19:59 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tt@hotmail.com' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (87)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/31 22:19:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'tt@hotmail.com' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(87): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/05/31 22:20:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '234' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (87)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/31 22:20:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '234' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(87): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/05/31 22:26:56 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.homeUrl" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(146): CComponent->__get('homeUrl')
+#1 C:\xampp\htdocs\reacad\protected\controllers\SiteController.php(97): CWebUser->__get('homeUrl')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reacad/index.php?r=site/login
+HTTP_REFERER=http://localhost/reacad/index.php?r=site/login
+---
+2014/05/31 22:45:27 [error] [php] Undefined variable: idprojeto0 (C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AvaliacaoController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AvaliacaoController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): AvaliacaoController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AvaliacaoController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+in C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php (80)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/31 22:46:06 [error] [exception.CException] exception 'CException' with message 'Property "Avaliacao.idprojeto0" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idprojeto0')
+#1 C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php(80): CActiveRecord->__get('idprojeto0')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/avaliacao/create
+---
+2014/05/31 22:46:42 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AvaliacaoController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AvaliacaoController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): AvaliacaoController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AvaliacaoController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+in C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php (80)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/05/31 23:25:45 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "_set".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\views\aluno\_form.php(31): CComponent->__call('_set', Array)
+#1 C:\xampp\htdocs\reacad\protected\views\aluno\_form.php(31): CActiveForm->_set(Object(Aluno), 'teste')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\reacad\protected\views\aluno\create.php(35): CController->renderPartial('_form', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(96): CController->render('create', Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php
+---
+2014/06/01 00:00:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "notas".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('notas')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('notas')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/notas')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/notas&id=7
+---
+2014/06/01 00:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "notas".' in C:\xampp\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('notas')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('notas')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/notas')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/notas&id=7
+---
+2014/06/01 00:56:07 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "areaProfessor".' in C:\xampp\htdocs\yii\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('areaProfessor', NULL, true)
+#1 C:\xampp\htdocs\reacad\protected\controllers\SiteController.php(136): CController->render('areaProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionAreaProfessor()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('areaProfessor')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/areaProfes...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/reacad/index.php?r=site/areaProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=7
+---
+2014/06/01 01:02:15 [error] [exception.CException] exception 'CException' with message 'Property "Avaliacao.idProfessor" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idProfessor')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('idProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Avaliacao), 'idProfessor')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1609): CHtml::activeInputField('hidden', Object(Avaliacao), 'idProfessor', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(756): CHtml::activeHiddenField(Object(Avaliacao), 'idProfessor', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\avaliacao\_form.php(34): CActiveForm->hiddenField(Object(Avaliacao), 'idProfessor')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\reacad\protected\views\avaliacao\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\reacad\protected\controllers\AvaliacaoController.php(87): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('avaliacao/creat...')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/reacad/index.php?r=avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/01 01:08:02 [error] [exception.CException] exception 'CException' with message 'Property "Avaliacao.idProfessor" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idProfessor')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('idProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Avaliacao), 'idProfessor')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1609): CHtml::activeInputField('hidden', Object(Avaliacao), 'idProfessor', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(756): CHtml::activeHiddenField(Object(Avaliacao), 'idProfessor', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\avaliacao\_form.php(34): CActiveForm->hiddenField(Object(Avaliacao), 'idProfessor')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\reacad\protected\views\avaliacao\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\reacad\protected\controllers\AvaliacaoController.php(87): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('avaliacao/creat...')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/reacad/index.php?r=avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/01 01:10:04 [error] [exception.CException] exception 'CException' with message 'Property "Avaliacao.idProfessor" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idProfessor')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('idProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Avaliacao), 'idProfessor')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1609): CHtml::activeInputField('hidden', Object(Avaliacao), 'idProfessor', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(756): CHtml::activeHiddenField(Object(Avaliacao), 'idProfessor', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\avaliacao\_form.php(34): CActiveForm->hiddenField(Object(Avaliacao), 'idProfessor')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\reacad\protected\views\avaliacao\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\reacad\protected\controllers\AvaliacaoController.php(87): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('avaliacao/creat...')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/reacad/index.php?r=avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/01 01:29:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`reacad`.`avaliacao`, CONSTRAINT `fk_avaliacao_projeto1` FOREIGN KEY (`idProjeto`) REFERENCES `projeto` (`idprojeto`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `avaliacao` (`nota`, `idProjeto`, `emailProfessor`) VALUES (:yp0, :yp1, :yp2).
+in C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php (81)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/01 01:29:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`reacad`.`avaliacao`, CONSTRAINT `fk_avaliacao_projeto1` FOREIGN KEY (`idProjeto`) REFERENCES `projeto` (`idprojeto`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `avaliacao` (`nota`, `idProjeto`, `emailProfessor`) VALUES (:yp0, :yp1, :yp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\modules\ProfessorLogin\controllers\AvaliacaoController.php(81): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/avaliacao/create
+---
+2014/06/01 01:42:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php:183
+Stack trace:
+#0 C:\xampp\htdocs\reacad\protected\controllers\ProjetoController.php(55): ProjetoController->loadModel('8')
+#1 [internal function]: ProjetoController->actionView('8')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ProjetoController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ProjetoController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('projeto/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=projeto/view&id=8
+---
+2014/06/01 01:53:21 [error] [php] Undefined variable: model (C:\xampp\htdocs\reacad\protected\views\aluno\_view.php:10)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\CListView.php(291): AlunoController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(167): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(135): CListView->renderContent()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CListView->run()
+#6 C:\xampp\htdocs\reacad\protected\views\aluno\index.php(44): AlunoController->widget()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): AlunoController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(869): AlunoController->renderFile()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(782): AlunoController->renderPartial()
+#11 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(155): AlunoController->render()
+#12 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionIndex()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): AlunoController->runAction()
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): AlunoController->filterAccessControl()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(265): AlunoController->runActionWithFilters()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): AlunoController->run()
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\reacad\index.php(13): CWebApplication->run()
+REQUEST_URI=/reacad/index.php?r=aluno/index
+in C:\xampp\htdocs\reacad\protected\views\aluno\_view.php (10)
+in C:\xampp\htdocs\reacad\protected\views\aluno\index.php (44)
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (155)
+2014/06/01 01:57:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/login".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/login')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/login
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:05:25 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Professor".
+in C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/01 02:05:25 [error] [exception.CException] exception 'CException' with message 'Property "Professor.idProfessor" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idProfessor')
+#1 C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php(74): CActiveRecord->__get('idProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProfessorController->actionCreate()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=professor/create
+---
+2014/06/01 02:05:47 [warning] [application] Failed to set unsafe attribute "imgPerfil" of "Professor".
+in C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php (72)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/01 02:05:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@admin.com' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `professor` (`nomeProfessor`, `emailProfessor`, `telefoneProfessor`, `areaEnsino`, `siape`, `senhaProfessor`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php (73)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/01 02:05:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@admin.com' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `professor` (`nomeProfessor`, `emailProfessor`, `telefoneProfessor`, `areaEnsino`, `siape`, `senhaProfessor`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\ProfessorController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): ProfessorController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=professor/create
+---
+2014/06/01 02:09:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/professor/create
+---
+2014/06/01 02:10:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/professor/create
+---
+2014/06/01 02:11:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/professor/create
+---
+2014/06/01 02:12:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/professor/create
+---
+2014/06/01 02:12:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/professor/create
+---
+2014/06/01 02:13:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+---
+2014/06/01 02:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:14:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+---
+2014/06/01 02:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+---
+2014/06/01 02:15:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:16:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:16:25 [error] [exception.CException] exception 'CException' with message 'Property "Avaliacao.idProfessor" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('idProfessor')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('idProfessor')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Avaliacao), 'idProfessor')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1609): CHtml::activeInputField('hidden', Object(Avaliacao), 'idProfessor', Array)
+#4 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(756): CHtml::activeHiddenField(Object(Avaliacao), 'idProfessor', Array)
+#5 C:\xampp\htdocs\reacad\protected\views\avaliacao\_form.php(34): CActiveForm->hiddenField(Object(Avaliacao), 'idProfessor')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\reacad\protected\views\avaliacao\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\reacad\protected\controllers\AvaliacaoController.php(87): CController->render('create', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AvaliacaoController->actionCreate()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('avaliacao/creat...')
+#26 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/reacad/index.php?r=avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+---
+2014/06/01 02:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:17:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/viewProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/viewPro...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/viewProfessor&id=prof%40hotmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+---
+2014/06/01 02:17:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/ProfessorLogin/professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/ProfessorLogin/professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:17:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+---
+2014/06/01 02:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "professor/create".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('professor/creat...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=professor/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/viewProfessor&id=admin%40admin.com
+---
+2014/06/01 02:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/loginProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/loginPr...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=professor/create
+---
+2014/06/01 02:23:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/loginProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/loginPr...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:23:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/loginProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/loginPr...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:24:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/loginProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/loginPr...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/01 02:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/loginProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/loginPr...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/loginProfessor
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/03 16:42:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/03 16:42:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create/1
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/03 16:43:12 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create/1
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/03 16:51:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create/1
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/03 16:51:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create&id=1
+HTTP_REFERER=http://localhost/reacad/index.php?r=projeto/view&id=1
+---
+2014/06/04 00:04:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (87)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/04 00:04:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(87): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/06/04 00:04:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (87)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/04 00:04:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(87): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/06/04 00:26:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php (87)
+in C:\xampp\htdocs\reacad\index.php (13)
+2014/06/04 00:26:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2147483647' for key 'codigoAluno_UNIQUE'. The SQL statement executed was: INSERT INTO `aluno` (`nomeAluno`, `emailAluno`, `codigoAluno`, `telefoneAluno`, `cursoAluno`, `curriculo`, `imgPerfil`, `senhaAluno`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\reacad\protected\controllers\AlunoController.php(87): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): AlunoController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('aluno/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/reacad/index.php?r=aluno/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=aluno/create
+---
+2014/06/04 00:31:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/04 00:31:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/avaliacao/create
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/default/loginProfessor
+---
+2014/06/04 00:33:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ProfessorLogin/index".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('ProfessorLogin/...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=ProfessorLogin/index
+---
+2014/06/04 00:33:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "default/viewProfessor".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('default/viewPro...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\reacad\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reacad/index.php?r=default/viewProfessor&id=professor%40hotmail.com
+HTTP_REFERER=http://localhost/reacad/index.php?r=ProfessorLogin/index
+---

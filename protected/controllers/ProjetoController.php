@@ -56,6 +56,26 @@ class ProjetoController extends Controller
 		));
 	}
 	
+		public function actionAvaliar($id)
+	{
+		$aval = new Avaliacao;
+		   
+		if(isset($_POST['Avaliacao']))
+		{
+			$aval->attributes=$_POST['Avaliacao'];
+			$aval->idProjeto = $id;
+			$aval->idProfessor = Yii::app()->user->id; 
+			
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->idAvaliacao));
+		}   
+		
+		
+		
+		  
+		$this->render('avaliar');
+	}
+	
 	
 	public function currentDate(){
         $date = date('m-d-Y-h-i-s', time());

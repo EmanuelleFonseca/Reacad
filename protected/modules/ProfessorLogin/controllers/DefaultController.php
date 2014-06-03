@@ -97,7 +97,7 @@ class DefaultController extends Controller
 			$model->attributes=$_POST['LoginForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login())
-				$this->redirect(array('default/index'));
+				$this->redirect(array('avaliacao/create'));
 		}
 		// display the login form
 		$this->render('loginProfessor',array('model'=>$model));

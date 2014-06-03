@@ -26,6 +26,9 @@ class Projeto extends CActiveRecord
 		return 'projeto';
 	}
 	
+	public function getIdProjeto(){
+		return $this->idprojeto;
+	}
 	public function MediaNotas()
 	{
 		$nota = null;
@@ -40,9 +43,11 @@ class Projeto extends CActiveRecord
 			$cont = count($post); 
 			foreach($post as $post){
 				$nota += $post->nota;
+
 			}
-		
-			   return (($nota/$cont).' Estrelas');
+		       $media = $nota/$cont;
+			   $media = number_format($media,'1');
+			   return (($media).' de 10 Estrelas');
 			
 			
 		}

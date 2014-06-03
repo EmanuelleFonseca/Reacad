@@ -49,7 +49,7 @@ $this->menu=array(
     	   <br/>  <img src = "imagens/star.gif"> <?php echo $model->MediaNotas();?>  <?php $this->widget('bootstrap.widgets.TbMenu', array(
                'type'=>'pills',
                'items'=>array(
-                 array('label'=>'(Avaliar Projeto)','url'=>array('/avaliacao/create')),
+                 array('label'=>'(Avaliar Projeto)','url'=>array('/ProfessorLogin/avaliacao/create', 'idproj' => $model->idprojeto)),
 		         array('label'=>'Deletar', 'icon'=>'trash','visible'=>!Yii::app()->user->isGuest, 'url'=>array('#'),'linkOptions'=>array('submit'=>array('delete','id'=>$model->idprojeto),'confirm'=>'Are you sure you want to delete this item?')), 
      ) )); ?>  
   	<?php $this->widget('bootstrap..widgets.TbDetailView', array(
