@@ -36,6 +36,7 @@ return array(
                 'bootstrap.gii',
             ),
 		),
+		 'Admin',
 		'ProfessorLogin',
 		
 	),

@@ -36,8 +36,8 @@ class ProfessorController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('delete'),
-				'users'=>array('admin'),
+				'actions'=>array(''),
+				'users'=>array('admin@admin.com'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -71,7 +71,7 @@ class ProfessorController extends Controller
 		{
 			$model->attributes=$_POST['Professor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->emailProfessor));
+				$this->redirect(array('Admin/default/concluido'));
 		}
 
 		$this->render('create',array(

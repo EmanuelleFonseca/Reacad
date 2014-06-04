@@ -64,9 +64,9 @@
 					  array('label'=>'Autores', 'url'=>array('/aluno/index')),
 					  array('label'=>'Projetos', 'url'=>array('/projeto/index')),
 					  array('label'=>'Fórum', 'url'=>array('/yiichatPost/create'), 'visible'=>!Yii::app()->user->isGuest),
-					  array('label'=>'Área do Professor', 'url'=>array('/site/areaProfessor'),'visible'=>Yii::app()->user->isGuest),
-					  array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				      
+					  array('label'=>'Área do Professor', 'url'=>array('/ProfessorLogin/default/index'),'visible'=>Yii::app()->user->isGuest),
+					  array('label'=>'Área do Aluno', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				      array('label'=>'Área do Administrador', 'url'=>array('/Admin/default/index'),'visible'=>Yii::app()->user->isGuest),
 				      ),
 			      'htmlOptions' =>array(
 			         'class' => "nav navbar-nav"

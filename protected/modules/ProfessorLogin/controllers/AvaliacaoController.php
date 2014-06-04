@@ -32,7 +32,7 @@ class AvaliacaoController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('update'),
+				'actions'=>array('update', 'feito'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -79,7 +79,7 @@ class AvaliacaoController extends Controller
 			$model->attributes=$_POST['Avaliacao'];
 			$model->emailProfessor = Yii::app()->user->id;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->idAvaliacao));
+				$this->redirect(array('feito'));
 		}
 
 		$this->render('create',array(
@@ -134,6 +134,10 @@ class AvaliacaoController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+	}
+	public function actionFeito()
+	{
+		$this->render('feito');
 	}
 
 	/**

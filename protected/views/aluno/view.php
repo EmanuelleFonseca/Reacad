@@ -18,7 +18,7 @@ $this->menu=array(
 <section class="title">
         <div class="container">
             <div class="row-fluid">
-                <div class="span6">
+                <div class="span5">
                 	
                 </div>
                 <div class="span6">

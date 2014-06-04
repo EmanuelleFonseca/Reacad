@@ -56,14 +56,11 @@
 		      <?php $this->widget('zii.widgets.CMenu',array(
 		          
 			      'items'=>array(
-				      array('label'=>'Login', 'url'=>array('default/loginProfessor'), 'visible'=>Yii::app()->user->isGuest),
+				      array('label'=>'Login', 'url'=>array('default/loginAdmin'), 'visible'=>Yii::app()->user->isGuest),
 				      array('label'=>'Ínicio', 'url'=>array('/site/index')),
-				      array('label'=>'Área do Professor', 'url'=>array('default/index')),
-				      array('label'=>'Perfil', 'url'=>array('default/viewProfessor', 'id'=>Yii::app()->user->id)),
-                      array('label'=>'Configurações', 'url'=>array('update', 'id'=>Yii::app()->user->id)),
-                      array('label'=>'Avaliar', 'url'=>array('/projeto/index')),
-			          array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			        
+				      array('label'=>'Área do Administrador', 'url'=>array('default/index')),
+				      array('label'=>'Cadastrar Professores', 'url'=>array('professor/create')),
+                      array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
            
 				      ),
 			      'htmlOptions' =>array(
