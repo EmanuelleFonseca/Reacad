@@ -56,10 +56,10 @@
 		      <?php $this->widget('zii.widgets.CMenu',array(
 		          
 			      'items'=>array(
-				      array('label'=>'Login', 'url'=>array('default/loginAdmin'), 'visible'=>Yii::app()->user->isGuest),
 				      array('label'=>'Ínicio', 'url'=>array('/site/index')),
 				      array('label'=>'Área do Administrador', 'url'=>array('default/index')),
 				      array('label'=>'Cadastrar Professores', 'url'=>array('professor/create')),
+				      array('label'=>'Login', 'url'=>array('default/loginAdmin'), 'visible'=>Yii::app()->user->isGuest),
                       array('label'=>'Logout ('.Yii::app()->user->id.')', 'icon'=>'off','url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
            
 				      ),

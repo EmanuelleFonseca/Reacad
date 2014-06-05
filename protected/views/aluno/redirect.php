@@ -17,7 +17,7 @@ $this->menu=array(
               <center>
                 <h3>Parabéns! Seu cadastro foi realizado com sucesso. <br/> Você agora faz parte do REACAD.</h3>
 				
-                <h5> Clique em login no menu principal, para poder conhecer nossos autores e projetos, aproveite para enviar os seus também. Seja bem vindo! =D</h5>
+                <h5> Clique em "Área do Aluno" no menu principal, para poder conhecer nossos autores e projetos, aproveite para enviar os seus também. Seja bem vindo! =D</h5>
              </center>
   </div>
   <br/><br/><br/><br/>

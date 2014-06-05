@@ -22,7 +22,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nomeAluno'); ?>
-		<?php echo $form->textField($model,'nomeAluno',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'nomeAluno',array('size'=>200,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'nomeAluno', array('class'=>'text-error')); ?>
 	</div>
 
